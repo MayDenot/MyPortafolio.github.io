@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mayra Denot | Portafolio</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="IconoPortafolio2.ico" type="image/x-icon">
+    <link rel="icon" href="images/IconoPortafolio2.ico" type="image/x-icon">
     <script src="script.js" defer></script>
     <!-- Link para iconos -->
     <script src="https://kit.fontawesome.com/dc94cdf766.js" crossorigin="anonymous"></script>
@@ -17,77 +17,36 @@
     <header id="header">
         <div class="head">
             <div class="profile">
-                <img src="LogoPortafolio2.png" alt="Logo MD">
+                <img src="images/LogoPortafolio2.png" alt="Logo MD">
             </div>
             <label id="btn">
                 <i class="fa-solid fa-bars"></i>
             </label>
         </div>
+        <!-- <div class="translate">
+            <img src="traducir.png" alt="Icono traductor">
+            <div class="selected-lang">
+                <select name="lang" id="lang-option">
+                    <option value="en">English</option>
+                    <option value="es">Spanish</option>
+                </select>
+            </div>
+        </div> -->
         <nav>
             <ul data-animation="to-left">
-                <li><a href="#">HOME</a></li> <br>
-                <li><a href="#">SOBRE MI</a></li> <br>
-                <li><a href="#">HABILIDADES</a></li> <br>
-                <li><a href="#">PROYECTOS</a></li> <br>
-                <li><a href="#">CONTACTO</a></li>
+                <li><a href="#home">HOME</a></li> <br>
+                <li><a href="#sobremi">SOBRE MI</a></li> <br>
+                <li><a href="#habilidades">HABILIDADES</a></li> <br>
+                <li><a href="#proyectos">PROYECTOS</a></li> <br>
+                <li><a href="#contacto">CONTACTO</a></li>
             </ul>
         </nav>
     </header>
     <section id="home">
-        <div class="bubbles">
-            <span style="--i:11;"></span>
-            <span style="--i:16;"></span>
-            <span style="--i:20;"></span>
-            <span style="--i:25;"></span>
-            <span style="--i:12;"></span>
-            <span style="--i:24;"></span>
-            <span style="--i:29;"></span>
-            <span style="--i:10;"></span>
-            <span style="--i:13;"></span>
-            <span style="--i:27;"></span>
-            <span style="--i:12;"></span>
-            <span style="--i:28;"></span>
-            <span style="--i:26;"></span>
-            <span style="--i:14;"></span>
-            <span style="--i:19;"></span>
-            <span style="--i:18;"></span>
-            <span style="--i:21;"></span>
-            <span style="--i:15;"></span>
-            <span style="--i:22;"></span>
-            <span style="--i:12;"></span>
-            <span style="--i:24;"></span>
-            <span style="--i:29;"></span>
-            <span style="--i:10;"></span>
-            <span style="--i:13;"></span>
-            <span style="--i:27;"></span>
-            <span style="--i:12;"></span>
-            <span style="--i:28;"></span>
-            <span style="--i:12;"></span>
-            <span style="--i:28;"></span>
-            <span style="--i:26;"></span>
-            <span style="--i:14;"></span>
-            <span style="--i:19;"></span>
-            <span style="--i:18;"></span>
-            <span style="--i:21;"></span>
-            <span style="--i:15;"></span>
-            <span style="--i:11;"></span>
-            <span style="--i:16;"></span>
-            <span style="--i:20;"></span>
-            <span style="--i:28;"></span>
-            <span style="--i:26;"></span>
-            <span style="--i:14;"></span>
-            <span style="--i:19;"></span>
-            <span style="--i:18;"></span>
-            <span style="--i:11;"></span>
-            <span style="--i:16;"></span>
-            <span style="--i:20;"></span>
-            <span style="--i:25;"></span>
-            <span style="--i:12;"></span>
-        </div>
         <div class="wrapper-home">
             <div class="container-home-text">
                 <h3>Hola!! <span class="emoji">👋🏻</span> Soy</h3>
-                <h2>Mayra Andrea <br> Denot </h2>
+                <h2>Mayra Andrea <br> Denot </h2> <br>
                 <h4>
                     <span>Desarrolladora web en proceso</span>, más <br>
                     especificamente en la parte <span>Front-End</span>, <br>
@@ -96,14 +55,245 @@
                 </h4>
             </div>
             <div class="container-home-img">
-                <img src="portafoliofigma.png" alt="Mayra Andrea Denot">
+                <div class="box">
+                    <div class="top"></div>
+                    <div>
+                        <span style="--i:0;">
+                            <img src="images/LogoPortafolio2.png" alt="Logo MD">
+                        </span>
+                        <span style="--i:1;">
+                            <img src="images/portafoliofigma.png" alt="Mayra Andrea Denot">
+                        </span>
+                        <span style="--i:2;">
+                            <img src="images/LogoPortafolio2.png" alt="Logo MD">
+                        </span>
+                        <span style="--i:3;">
+                            <img src="images/portafoliofigma.png" alt="Mayra Andrea Denot">
+                        </span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <section id="sobremi"></section>
-    <section id="habilidades"></section>
-    <section id="proyectos"></section>
-    <section id="contacto"></section>
+    <section id="sobremi">
+        <div class="container-sobremi">
+            <h2 class="titulo">
+                <span>SOBRE</span>
+                <span>MI</span>
+            </h2> <br> <br> <br> <br>
+            <ul class="wrapper-sobremi">
+                <li class="formacion-academica">
+                    <h2>Formación Académica</h2>
+                    <h4>2017 - 2022</h4>
+                    <p>Secundario completo: Colegio Argentino Danés Alta-Mira, Necochea, Prov. Bs. As.</p>
+                    <h4>Actualidad (2023)</h4>
+                    <p>Estudiante de Argentina Programa 4.0 y autodidacta.</p>
+                </li> <br>
+                <li class="personalidad-objetivos">
+                    <h2>Personalidad y objetivos</h2>
+                    <p>
+                        Me considero una persona que le gustan los desafíos, este año tengo como objetivo aprender
+                        lo
+                        máximo <br>
+                        posible de forma autodidacta iniciandome en el mundo del desarrollo web. Me gusta aprender de
+                        manera <br>
+                        autónoma, aunque me sirve mucho retroalimentarme de el aprendizaje en grupo, hacer proyectos
+                        para <br>
+                        mejorar, ganar experiencia y confianza. El próximo año me gustaría iniciar la Tecnicatura
+                        Universitara
+                        de <br> Desarrollo de Aplicaciones Informáticas (TUDAI) en la UNICEN de Tandil para obtener un
+                        título,
+                        expandir
+                        mis <br> conocimientos, mejorar la lógica de programación, el inglés y conocer a otros
+                        desarrolladores.
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id="habilidades">
+        <div class="container-habilidades">
+            <h2 class="titulo">
+                <span>HABILIDADES</span>
+            </h2> <br> <br>
+            <div class="wrapper-habilidades">
+                <div class="lenguajes">
+                    <h2>Lenguajes</h2> <br>
+                    <h3>Lenguajes de los cuales tengo conocimiento</h3> <br>
+                    <div class="lenguajes-img">
+                        <div class="content">
+                            <img src="images/html5.png" alt="HTML5">
+                            <li>
+                                <div class="head-bar">
+                                    <h5>HTML</h5>
+                                    <h5>100%</h5>
+                                </div>
+                                <span class="bar"><span class="html"></span></span>
+                            </li>
+                        </div>
+                        <div class="content">
+                            <img src="images/css-3.png" alt="CSS3">
+                            <li>
+                                <div class="head-bar">
+                                    <h5>CSS</h5>
+                                    <h5>90%</h5>
+                                </div>
+                                <span class="bar"><span class="css"></span></span>
+                            </li>
+                        </div>
+                        <div class="content">
+                            <img id="js" src="images/JS.png" alt="JavaScript">
+                            <li>
+                                <div class="head-bar">
+                                    <h5>JS</h5>
+                                    <h5>10%</h5>
+                                </div>
+                                <span class="bar"><span class="js"></span></span>
+                            </li>
+                        </div>
+                        <div class="content">
+                            <img src="images/SQL.png" alt="SQL">
+                            <li>
+                                <div class="head-bar">
+                                    <h5>SQL</h5>
+                                    <h5>25%</h5>
+                                </div>
+                                <span class="bar"><span class="sql"></span></span>
+                            </li>
+                        </div>
+                    </div>
+                </div> <br>
+                <div class="herramientas">
+                    <h2>Frameworks, librerias, etc</h2> <br>
+                    <h3>Tecnologías y herramientas que utilizo</h3> <br>
+                    <div class="herramientas-img">
+                        <div class="content">
+                            <img src="images/Bootstrap.png" alt="Bootstrap">
+                            <li>
+                                <div class="head-bar">
+                                    <h5>Bootstrap</h5>
+                                    <h5>80%</h5>
+                                </div>
+                                <span class="bar"><span class="bootstrap"></span></span>
+                            </li>
+                        </div>
+                        <div class="content">
+                            <img src="images/Figma.png" alt="Figma">
+                            <li>
+                                <div class="head-bar">
+                                    <h5>Figma</h5>
+                                    <h5>20%</h5>
+                                </div>
+                                <span class="bar"><span class="figma"></span></span>
+                            </li>
+                        </div>
+                        <div class="content">
+                            <img src="images/GitHub.png" alt="Github">
+                            <li>
+                                <div class="head-bar">
+                                    <h5>Github</h5>
+                                    <h5>85%</h5>
+                                </div>
+                                <span class="bar"><span class="github"></span></span>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="proyectos">
+        <div class="container-proyectos">
+            <h2 class="titulo">
+                <span>PROYECTOS</span>
+            </h2>
+            <div class="wrapper-cards">
+                <div class="cards">
+                    <div class="img-card">
+                        <img src="images/ProyectoMarvel.png" alt="Marvel Web">
+                    </div>
+                    <div class="card-body">
+                        <h3>Marvel Web</h3>
+                        <div class="buttons">
+                            <a href="https://github.com/MayDenot/Marvel.github.io" target="_blank">Github</a>
+                            <a href="https://maydenot.github.io/Marvel.github.io/" target="_blank">Web</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="img-card">
+                        <img src="images/ProyectoCalculator.png" alt="Calculadora Simple">
+                    </div>
+                    <div class="card-body">
+                        <h3>Calculadora Simple</h3>
+                        <div class="buttons">
+                            <a href="https://github.com/MayDenot/Calculator.github.io" target="_blank">Github</a>
+                            <a href="https://maydenot.github.io/Calculator.github.io/" target="_blank">Web</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="img-card">
+                        <img src="images/ProyectoClimatech.png" alt="Web del clima">
+                    </div>
+                    <div class="card-body">
+                        <h3>Climatech</h3>
+                        <div class="buttons">
+                            <a href="https://github.com/MayDenot/Climatech.github.io" target="_blank">Github</a>
+                            <a href="https://maydenot.github.io/Climatech.github.io/" target="_blank">Web</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contacto">
+        <div class="container-contacto">
+            <h2 class="titulo">
+                <span>CONTACTO</span>
+            </h2>
+            <div class="content-contacto">
+                <div class="wrapper-contacto">
+                    <form>
+                        <p class="p p-top">
+                            <label>Nombre y Apellido <span>*</span></label>
+                            <input type="text" name="nombreyapellido" required>
+                        </p>
+                        <p class="p p-top-r"><span>*</span> Campos obligatorios</p>
+                        <p class="p p-mid p-mid-left">
+                            <label>Email <span>*</span></label>
+                            <input type="text" name="email" required>
+                        </p>
+                        <p class="p p-mid p-mid-right">
+                            <label>Asunto / Título <span>*</span></label>
+                            <input type="text" name="asunto" required>
+                        </p>
+                        <p class="p block-top">
+                            <label>Mensaje <span>*</span></label>
+                            <textarea name="mensaje" rows="3" required></textarea>
+                        </p>
+                        <p class="p block-bot">
+                            <button type="submit">
+                                <h3>ENVIAR</h3>
+                            </button>
+                        </p>
+                    </form>
+                </div>
+                <div class="wrapper-datos-personales">
+                    <div class="content-dp">
+                        <div class="otros-contactos">
+                            <h3>Otros contactos..</h3>
+                            <ul>
+                                <li>Gmail : mayra.denot@gmail.com.</li>
+                                <li>Teléfono: +54 9 2262 48-5219.</li>
+                            </ul>
+                        </div>
+                        <button>DESCARGAR CV</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
