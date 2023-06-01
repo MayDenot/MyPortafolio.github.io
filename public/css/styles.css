@@ -149,6 +149,7 @@ ul[data-animation="to-left"] a::before {
 .container-social-media ul {
     margin-right: 50px;
     list-style: none;
+    position: static;
 }
 
 .container-social-media ul li a i {
@@ -619,6 +620,7 @@ ul[data-animation="to-left"] a::before {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    position: relative;
 }
 
 .wrapper-cards {
@@ -630,7 +632,7 @@ ul[data-animation="to-left"] a::before {
 }
 
 .cards {
-    width: 400px;
+    width: 100%;
     height: 300px;
     background-color: rgba(255, 255, 255, 0.3);
     border-radius: 10px;
@@ -642,8 +644,9 @@ ul[data-animation="to-left"] a::before {
 
 .cards:hover {
     width: 410px;
-    height: 360px;
-    box-shadow: 0 0 10px #00D1FF;
+    height: 310px;
+    box-shadow: 0 0 15px #000000;
+    transition: all .1s ease-in-out;
 }
 
 .cards .img-card {
@@ -674,6 +677,7 @@ ul[data-animation="to-left"] a::before {
     color: #fff;
     cursor: pointer;
     text-decoration: none;
+    margin: 10px;
 }
 
 .cards .card-body a:hover {
@@ -692,6 +696,7 @@ ul[data-animation="to-left"] a::before {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    position: relative;
 }
 
 .content-contacto {
