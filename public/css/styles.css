@@ -55,8 +55,8 @@ html::-webkit-scrollbar-track {
 
 #btn {
     position: relative;
-    cursor: pointer;
     left: 50px;
+    height: auto;
 }
 
 #btn i {
@@ -995,5 +995,113 @@ footer .container-footer .footer-license {
 }
 
 @media screen and (min-width: 768px) {
-    
+
+    #home .wrapper-home {
+        display: grid;
+        grid-template-columns: 300px 300px;
+        align-content: center;
+    }
+
+    .titulo {
+        font-size: 5em;
+        -webkit-box-reflect: below -34px linear-gradient(transparent, #0004);
+    }
+
+    .wrapper-sobremi {
+        margin-top: 20px;
+        grid-template-columns: 500px;
+    }
+
+    .wrapper-sobremi h2 {
+        font-size: 1.5em;
+    }
+
+    .wrapper-sobremi h4 {
+        font-size: 1.3em;
+    }
+
+    .wrapper-sobremi p {
+        font-size: 15px;
+    }
+
+    .wrapper-habilidades .lenguajes h2 {
+        font-size: 2em; 
+    }
+
+    .wrapper-habilidades .lenguajes h3 {
+        font-size: 18px;
+    }
+
+    .wrapper-habilidades .lenguajes .lenguajes-img .content img {
+        width: 80px;
+        height: auto;
+    }
+
+    .wrapper-habilidades .herramientas h2 {
+        font-size: 2em;
+    }
+
+    .wrapper-habilidades .herramientas h3 {
+        font-size: 18px;
+    }
+
+    .wrapper-habilidades .herramientas .herramientas-img .content img {
+        width: 80px;
+        height: auto;
+    }
+
+    .wrapper-cards {
+        grid-template-columns: 300px 300px;
+        gap: 15px;
+    }
+
+    .cards {
+        height: 200px;
+    }
+
+    .cards .img-card img {
+        width: 90%;
+    }
+
+    .cards .card-body h3 {
+        font-size: 15px;
+    }
+
+    .cards .card-body a {
+        padding: 3px;
+        font-size: 15px;
+    }
+
+    .cards:hover {
+        width: 310px;
+        height: 210px;
+    }
+
+    .content-contacto {
+        grid-template-columns: 500px;
+    }
+
+    .wrapper-contacto, .wrapper-datos-personales {
+        height: 250px;
+    }
+
+    .wrapper-contacto form .p {
+        padding: 12px;
+        font-size: 15px;
+        height: 60px;
+    }
+
+    .wrapper-contacto form .p button {
+        padding: 6px;
+        font-size: 15px;
+    }
+
+    .wrapper-datos-personales .content-dp button {
+        padding: 8px;
+        font-size: 15px;
+    }
+
+    .wrapper-datos-personales .content-dp {
+        font-size: 15px;
+    }
 }
