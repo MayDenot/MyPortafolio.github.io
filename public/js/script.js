@@ -1,8 +1,10 @@
 // Variables 
 const btnBar = document.getElementById("btn");
-const header = document.getElementById("header");
+const slideBar = document.getElementById("slidebar");
 
 // Boton toggle de la barra de navegacion
 btnBar.addEventListener('click', () => {
-    header.classList.toggle('desplegar');
+    slideBar.classList.toggle('desplegar');
 })
+
+
