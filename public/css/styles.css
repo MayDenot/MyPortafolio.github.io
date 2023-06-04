@@ -212,11 +212,6 @@ ul[data-animation="to-left"] a::before {
     color: #17A7C7;
 }
 
-/*dektop 
-.container-home-img {
-    margin-left: 140px;
-} */
-
 /* Animacion del emoji saludar */
 
 .container-home-text h3 .emoji {
@@ -386,8 +381,7 @@ ul[data-animation="to-left"] a::before {
             0 0 20px #00D1FF,
             0 0 40px #00D1FF,
             0 0 80px #00D1FF,
-            0 0 160px #00D1FF,
-            0 0 400px #00D1FF;
+            0 0 160px #00D1FF;
     }
 }
 
@@ -1150,5 +1144,186 @@ footer .container-footer .footer-license {
         display: flex;
         z-index: 20;
         margin-right: 10px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+
+    .container-social-media ul li a i {
+        font-size: 40px;
+    }
+
+    .container-home-text h3 {
+        font-size: 30px;
+    }
+
+    .container-home-text h2 {
+        font-size: 55px;
+    }
+
+    .container-home-text h4 {
+        font-size: 25px;
+    }
+
+    #home .wrapper-home {
+        grid-template-columns: 500px 400px;
+    }
+
+    #home .box {
+        width: 300px;
+        height: 300px;
+    }
+
+    .box div span {
+        transform: rotateY(calc(90deg * var(--i))) translateZ(150px);
+    }
+
+    .top {
+        transform: rotateX(90deg) translateZ(150px);
+    }
+
+    .top::before {
+        width: 300px;
+        height: 300px;
+        transform: translateZ(-350px);
+    }
+
+    .titulo {
+        font-size: 7em;
+        -webkit-box-reflect: below -42px linear-gradient(transparent, #0004);
+    }
+
+    .wrapper-sobremi {
+        margin-top: 50px;
+        grid-template-columns: 850px;
+    }
+
+    .wrapper-sobremi h2 {
+        font-size: 2em;
+    }
+
+    .wrapper-sobremi h4 {
+        font-size: 1.5em;
+    }
+
+    .wrapper-sobremi p {
+        font-size: 20px;
+    }
+
+    .wrapper-habilidades .lenguajes h2 {
+        font-size: 2.5em;
+    }
+
+    .wrapper-habilidades .lenguajes h3 {
+        font-size: 22px;
+    }
+
+    .wrapper-habilidades .herramientas h2 {
+        font-size: 2.5em;
+    }
+
+    .wrapper-habilidades .herramientas h3 {
+        font-size: 22px;
+    }
+
+    .wrapper-habilidades .lenguajes .lenguajes-img .content img {
+        width: 90px;
+    }
+
+    .wrapper-habilidades .herramientas .herramientas-img .content img {
+        width: 90px;
+    }
+
+    .content li .head-bar h5 {
+        font-size: 15px;
+    }
+
+    .herramientas .content li .head-bar h5 {
+        font-size: 15px;
+    }
+
+    .bar {
+        height: 10px;
+    }
+
+    .bar span {
+        height: 15px;
+    }
+
+    .wrapper-cards {
+        grid-template-columns: 350px 350px 350px;
+        gap: 30px;
+    }
+
+    .cards {
+        height: 250px;
+        padding: 0 20px;
+    }
+
+    .cards .img-card img {
+        width: 100%;
+    }
+
+    .cards .links {
+        margin-top: 5px;
+    }
+
+    .cards .card-body h3 {
+        font-size: 20px;
+    }
+
+    .cards .card-body a {
+        padding: 4px;
+        font-size: 18px;
+    }
+
+    .cards:hover {
+        width: 360px;
+        height: 260px;
+    }
+
+    .content-contacto {
+        grid-template-columns: 550px 500px;
+    }
+
+    .wrapper-contacto, .wrapper-datos-personales {
+        height: 400px;
+    }
+
+    .wrapper-contacto form {
+        height: 100%;
+    }
+
+    .wrapper-contacto form .p {
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    .wrapper-contacto form .p textarea {
+        height: 100px;
+        width: 100%;
+    }
+
+    .wrapper-contacto form .p button {
+        padding: 5px;
+        font-size: 18px;
+    }
+
+    .wrapper-datos-personales .content-dp button {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .wrapper-contacto form .block-top {
+        height: 100%;
+    }
+
+    footer .container-footer .footer-logo img {
+        width: 100px;
+    }
+
+    .footer-license h4 {
+        padding-bottom: 10px;
+        font-size: 18px;
     }
 }
