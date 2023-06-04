@@ -1105,3 +1105,50 @@ footer .container-footer .footer-license {
         font-size: 15px;
     }
 }
+
+@media screen and (min-width: 1024px){
+    .wrapper-sobremi {
+        margin-top: 25px;
+        grid-template-columns: 650px;
+    }
+
+    .wrapper-habilidades .lenguajes .lenguajes-img .content img {
+        width: 70px;
+    }
+
+    .wrapper-habilidades .herramientas .herramientas-img .content img {
+        width: 70px;
+    }
+
+    .content-contacto {
+        grid-template-columns: 450px 350px;
+    }
+
+    .wrapper-contacto, .wrapper-datos-personales {
+        height: 350px;
+    }
+
+    .wrapper-contacto form .p {
+        padding: 16px;
+        font-size: 18px;
+        height: 90px;
+    }
+
+    .wrapper-datos-personales .content-dp button {
+        font-size: 17px;
+    }
+
+    .wrapper-datos-personales .content-dp {
+        font-size: 18px;
+    }
+
+    .footer-social-media {
+        display: none;
+    }
+
+    .social-media {
+        display: flex;
+        z-index: 20;
+        margin-right: 10px;
+    }
+}
