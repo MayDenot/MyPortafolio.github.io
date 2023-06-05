@@ -260,8 +260,8 @@ ul[data-animation="to-left"] a::before {
 /* Animacion del cubo */
 .box {
     position: relative;
-    width: 100px;
-    height: 100px;
+    width: 125px;
+    height: 125px;
     transform-style: preserve-3d;
     animation: animate 15s linear infinite;
 }
@@ -292,7 +292,7 @@ ul[data-animation="to-left"] a::before {
     width: 100%;
     height: 100%;
     background: linear-gradient(#151515, #00D1FF);
-    transform: rotateY(calc(90deg * var(--i))) translateZ(50px);
+    transform: rotateY(calc(90deg * var(--i))) translateZ(62.5px);
     transform-style: preserve-3d;
     display: flex;
     justify-content: center;
@@ -305,7 +305,7 @@ ul[data-animation="to-left"] a::before {
     left: 0;
     width: 300px;
     height: 300px;
-    transform: rotateX(90deg) translateZ(50px);
+    transform: rotateX(90deg) translateZ(62.5px);
     background-color: #151515;
 }
 
@@ -314,10 +314,10 @@ ul[data-animation="to-left"] a::before {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100px;
-    height: 100px;
+    width: 125px;
+    height: 125px;
     background-color: #00D1FF;
-    transform: translateZ(-150px);
+    transform: translateZ(-160px);
     filter: blur(20px);
     box-shadow: 0 0 120px rgba(0, 209, 255, 0.2),
         0 0 200px rgba(0, 209, 255, 0.4),
@@ -340,7 +340,7 @@ ul[data-animation="to-left"] a::before {
     color: grey;
     width: 100%;
     text-align: center;
-    -webkit-box-reflect: below -14px linear-gradient(transparent, #0004); /*Dektop es -42px*/
+    -webkit-box-reflect: below -14px linear-gradient(transparent, #0004);
 }
 
 .titulo span {
@@ -413,7 +413,7 @@ ul[data-animation="to-left"] a::before {
 }
 
 .wrapper-sobremi p {
-    font-size: 10px;
+    font-size: 11px;
 }
 
 #habilidades {
@@ -917,6 +917,53 @@ footer .container-footer .footer-license {
 }
 
 /* Breakpoints */
+@media screen and (min-width: 375px) {
+
+    #home .box {
+        width: 150px;
+        height: 150px;
+    }
+
+    .box div span {
+        transform: rotateY(calc(90deg * var(--i))) translateZ(75px);
+    }
+
+    .top {
+        transform: rotateX(90deg) translateZ(75px)
+    }
+
+    .top::before {
+        width: 150px;
+        height: 150px;
+        transform: translateZ(-200px);
+    }
+
+    .titulo {
+        font-size: 2.7em;
+        -webkit-box-reflect: below -18px linear-gradient(transparent, #0004);
+    }
+
+    .wrapper-sobremi {
+        margin-top: 10px;
+    }
+
+    .wrapper-sobremi h2 {
+        font-size: 1.4em;
+    }
+
+    .wrapper-sobremi h4 {
+        font-size: 1.2em;
+    }
+
+    .wrapper-sobremi p {
+        font-size: 12px;
+    }
+
+    .wrapper-cards {
+        margin-top: 20px;
+    }
+}
+
 @media screen and (min-width: 425px) {
     
     #home .container-home-text {
@@ -1100,7 +1147,7 @@ footer .container-footer .footer-license {
     }
 }
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1024px) {
     .wrapper-sobremi {
         margin-top: 25px;
         grid-template-columns: 650px;
