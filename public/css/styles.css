@@ -29,6 +29,46 @@ html::-webkit-scrollbar-track {
     background-color: #636464;
 }
 
+h1::selection {
+    background-color: #636464;
+}
+
+h2::selection {
+    background-color: #636464;
+}
+
+h3::selection {
+    background-color: #636464;
+}
+
+h4::selection {
+    background-color: #636464;
+}
+
+h5::selection {
+    background-color: #636464;
+}
+
+p::selection {
+    background-color: #636464;
+}
+
+a::selection {
+    background-color: #636464;
+}
+
+button::selection {
+    background-color: #636464;
+}
+
+li::selection {
+    background-color: #636464;
+}
+
+label::selection {
+    background-color: #636464;
+}
+
 #slidebar {
     position: fixed;
     width: 200px;
@@ -466,6 +506,7 @@ ul[data-animation="to-left"] a::before {
 
 .wrapper-habilidades .lenguajes .lenguajes-img .content i:hover {
     font-size: 50px;
+    transition: all .3s linear;
 }
 
 .wrapper-habilidades .herramientas {
@@ -494,6 +535,7 @@ ul[data-animation="to-left"] a::before {
 
 .wrapper-habilidades .herramientas .herramientas-img .content i:hover {
     font-size: 50px;
+    transition: all .3s linear;
 }
 
 /* Progress Bar */
@@ -506,7 +548,7 @@ ul[data-animation="to-left"] a::before {
 
 .content li .head-bar {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin-bottom: 5px;
 }
 
@@ -520,7 +562,7 @@ ul[data-animation="to-left"] a::before {
 }
 
 .bar {
-    background: #353b48;
+    background: #5a5e66;
     display: block;
     height: 5px;
     border-radius: 10px;

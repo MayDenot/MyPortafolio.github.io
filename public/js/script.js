@@ -6,5 +6,3 @@ const slideBar = document.getElementById("slidebar");
 btnBar.addEventListener('click', () => {
     slideBar.classList.toggle('desplegar');
 })
-
-
