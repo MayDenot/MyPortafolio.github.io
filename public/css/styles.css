@@ -29,6 +29,10 @@ html::-webkit-scrollbar-track {
     background-color: #636464;
 }
 
+span::selection {
+    background-color: #636464;
+}
+
 h1::selection {
     background-color: #636464;
 }
@@ -504,11 +508,6 @@ ul[data-animation="to-left"] a::before {
     font-size: 40px;
 }
 
-.wrapper-habilidades .lenguajes .lenguajes-img .content i:hover {
-    font-size: 50px;
-    transition: all .3s linear;
-}
-
 .wrapper-habilidades .herramientas {
     text-align: center;
 }
@@ -531,11 +530,6 @@ ul[data-animation="to-left"] a::before {
 
 .wrapper-habilidades .herramientas .herramientas-img .content i {
     font-size: 40px;
-}
-
-.wrapper-habilidades .herramientas .herramientas-img .content i:hover {
-    font-size: 50px;
-    transition: all .3s linear;
 }
 
 /* Progress Bar */
@@ -719,15 +713,13 @@ ul[data-animation="to-left"] a::before {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 
 .cards:hover {
-    /* width: 410px;
-    height: 310px; */
     width: 251px;
     height: 151px;
-    box-shadow: 0 0 15px #000000;
-    transition: all .1s ease-in-out;
+    box-shadow: 0 0 15px #636464;
 }
 
 .cards .img-card {
@@ -785,16 +777,13 @@ ul[data-animation="to-left"] a::before {
 .content-contacto {
     display: grid;
     grid-template-columns: 300px;
-    /* grid-template-columns: 600px 350px; dektop */
     gap: 20px;
 }
 
 .wrapper-contacto, .wrapper-datos-personales {
-    /* height: 400px; */
     height: 200px;
     background-color: #323234;
     color: #fff;
-    /* padding: 16px; */
     border-radius: 10px;
     box-shadow: 5px 5px 0 #2a2a2b;
 }
@@ -803,6 +792,7 @@ ul[data-animation="to-left"] a::before {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
+    padding: 5px;
 }
 
 .wrapper-contacto form span {
@@ -810,7 +800,6 @@ ul[data-animation="to-left"] a::before {
 }
 
 .wrapper-contacto form .p {
-    /* padding: 10px; */
     padding: 8px;
     font-size: 11px;
     height: 50px;
@@ -847,8 +836,6 @@ ul[data-animation="to-left"] a::before {
 
 .wrapper-contacto form .p input,
 textarea {
-    /* width: 100%;
-    height: 50%; dektop*/
     width: 90%;
     height: 50%;
     border: none;
@@ -863,15 +850,15 @@ textarea {
 }
 
 .wrapper-contacto form .p button {
-    margin-top: 10px; /* Dektop es 20px*/
+    margin-top: 10px; 
     width: 100%;
-    padding: 5px; /* dektop 10px */
+    padding: 5px; 
     border: 2px solid #00D1FF;
     border-radius: 20px;
     font-weight: 600;
     background-color: transparent;
     color: #00D1FF;
-    font-size: 10px; /* Desktop sin h3 sin definir */
+    font-size: 10px;
 }
 
 .wrapper-contacto form .p button:hover {
@@ -893,7 +880,6 @@ textarea {
 }
 
 .wrapper-datos-personales .content-dp h3 {
-    /* padding-bottom: 15px; dektop*/
     padding: 10px;
 }
 
@@ -903,8 +889,6 @@ textarea {
 } 
 
 .wrapper-datos-personales .content-dp button {
-    /*padding: 10px;
-    font-size: 15px; dektop*/
     padding: 5px;
     font-size: 10px;
     font-weight: 600;
@@ -1019,16 +1003,8 @@ footer .container-footer .footer-license {
         font-size: 50px;
     }
 
-    .wrapper-habilidades .lenguajes .lenguajes-img .content i:hover {
-        font-size: 55px;
-    }
-
     .wrapper-habilidades .herramientas .herramientas-img .content i {
         font-size: 50px;
-    }
-
-    .wrapper-habilidades .herramientas .herramientas-img .content i:hover {
-        font-size: 55px;
     }
 }
 
@@ -1070,16 +1046,8 @@ footer .container-footer .footer-license {
         font-size: 55px;
     }
 
-    .wrapper-habilidades .lenguajes .lenguajes-img .content i:hover {
-        font-size: 60px;
-    }
-
     .wrapper-habilidades .herramientas .herramientas-img .content i {
         font-size: 55px;
-    }
-
-    .wrapper-habilidades .herramientas .herramientas-img .content i:hover {
-        font-size: 60px;
     }
 
     .wrapper-cards {
@@ -1152,16 +1120,8 @@ footer .container-footer .footer-license {
         font-size: 60px;
     }
 
-    .wrapper-habilidades .lenguajes .lenguajes-img .content i:hover {
-        font-size: 65px;
-    }
-
     .wrapper-habilidades .herramientas .herramientas-img .content i {
         font-size: 60px;
-    }
-
-    .wrapper-habilidades .herramientas .herramientas-img .content i:hover {
-        font-size: 65px;
     }
 
     .wrapper-habilidades .herramientas h2 {
@@ -1243,16 +1203,8 @@ footer .container-footer .footer-license {
         font-size: 70px;
     }
 
-    .wrapper-habilidades .lenguajes .lenguajes-img .content i:hover {
-        font-size: 75px;
-    }
-
     .wrapper-habilidades .herramientas .herramientas-img .content i {
         font-size: 70px;
-    }
-
-    .wrapper-habilidades .herramientas .herramientas-img .content i:hover {
-        font-size: 75px;
     }
 
     .content-contacto {
@@ -1265,7 +1217,7 @@ footer .container-footer .footer-license {
 
     .wrapper-contacto form .p {
         padding: 16px;
-        font-size: 18px;
+        font-size: 17px;
         height: 90px;
     }
 
@@ -1274,7 +1226,8 @@ footer .container-footer .footer-license {
     }
 
     .wrapper-datos-personales .content-dp {
-        font-size: 18px;
+        margin-left: 2px;
+        font-size: 17px;
     }
 
     .footer-social-media {
@@ -1375,20 +1328,12 @@ footer .container-footer .footer-license {
         font-size: 78px;
     }
 
-    .wrapper-habilidades .lenguajes .lenguajes-img .content i:hover {
-        font-size: 83px;
-    }
-
     .wrapper-habilidades .herramientas .herramientas-img {
         gap: 60px;
     }
 
     .wrapper-habilidades .herramientas .herramientas-img .content i {
         font-size: 78px;
-    }
-
-    .wrapper-habilidades .herramientas .herramientas-img .content i:hover {
-        font-size: 83px;
     }
 
     .content li .head-bar h5 {
@@ -1453,7 +1398,6 @@ footer .container-footer .footer-license {
 
     .wrapper-contacto form .p {
         padding: 10px;
-        font-size: 20px;
     }
 
     .wrapper-contacto form .p textarea {
@@ -1462,13 +1406,11 @@ footer .container-footer .footer-license {
     }
 
     .wrapper-contacto form .p button {
-        padding: 5px;
-        font-size: 18px;
+        padding: 6px;
     }
 
     .wrapper-datos-personales .content-dp button {
-        font-size: 18px;
-        padding: 10px;
+        padding: 6px;
     }
 
     .wrapper-contacto form .block-top {
