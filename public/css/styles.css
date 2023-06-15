@@ -84,6 +84,7 @@ label::selection {
     box-shadow: 0 0 15px black;
     top: 0;
     transition: all .5s ease-in-out;
+    left: -200px;
 }
 
 .head {
@@ -117,7 +118,7 @@ label::selection {
 
 /* Clase agregada por JS */
 .desplegar {
-    transform: translateX(-100%);
+    transform: translateX(100%);
     transition: all .5s ease-in-out;
 }
 
