@@ -310,7 +310,7 @@
                 <div class="wrapper-contacto" data-aos="fade-right"
                 data-aos-easing="linear"
                 data-aos-duration="1500">
-                    <form action="https://formsubmit.co/mayra.denot@gmail.com" method="POST">
+                    <form action="https://formsubmit.co/mayra.denot@gmail.com" method="POST" id="form">
                         <p class="p p-top">
                             <label for="name">Nombre y Apellido <span>*</span></label>
                             <input id="name" type="text" name="nombreyapellido" required autocomplete="name">
@@ -329,12 +329,14 @@
                             <textarea id="mensaje" name="mensaje" rows="3" required></textarea>
                         </p>
                         <p class="p block-bot">
-                            <button type="submit">
+                            <button type="submit" id="submit">
                                 <h3>ENVIAR</h3>
                             </button>
                         </p>
                         <input type="hidden" name="_next" value="https://maydenot.github.io/MyPortafolio.github.io/#contacto">
                         <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_autoresponse" value="Enviado!!">
+                        <input type="hidden" name="_template" value="table">
                     </form>
                 </div>
                 <div class="wrapper-datos-personales" data-aos="fade-left"
