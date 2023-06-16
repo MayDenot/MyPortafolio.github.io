@@ -716,12 +716,6 @@ ul[data-animation="to-left"] a::before {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-}
-
-.cards:hover {
-    width: 251px;
-    height: 151px;
 }
 
 .cards .img-card {
@@ -785,7 +779,7 @@ ul[data-animation="to-left"] a::before {
 
 .wrapper-contacto,
 .wrapper-datos-personales {
-    height: 200px;
+    height: 210px;
     background-color: #323234;
     color: #fff;
     border-radius: 10px;
@@ -796,26 +790,12 @@ ul[data-animation="to-left"] a::before {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    padding: 5px;
-}
-
-.wrapper-contacto form span {
-    color: #00D1FF;
-}
-
-.wrapper-contacto form .p {
-    padding: 8px;
-    font-size: 11px;
-    height: 50px;
+    padding: 5px 8px 8px 8px;
 }
 
 .wrapper-contacto form .p-top {
     grid-column: 1;
     grid-row: 1;
-}
-
-.wrapper-contacto form .p-top-r {
-    text-align: end;
 }
 
 .wrapper-contacto form .p-mid-left {
@@ -838,9 +818,16 @@ ul[data-animation="to-left"] a::before {
     grid-row: 4;
 }
 
+.wrapper-contacto .val {
+    font-size: 12px;
+    padding-top: 5px;
+    text-align: end;
+    color: #888;
+}
+
 .wrapper-contacto form .p input,
 textarea {
-    width: 90%;
+    width: 100%;
     height: 50%;
     border: none;
     background: none;
@@ -852,6 +839,45 @@ textarea {
 .wrapper-contacto form .p textarea {
     height: 90%;
 }
+
+.input-data {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-data input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 13px;
+    border-bottom: 2px solid #ccc;
+}
+
+.input-data input:focus~label,
+.input-data input:valid~label {
+    transform: translateY(-20px);
+    font-size: 12px;
+    bottom: 18px;
+}
+
+.input-data textarea:focus~label,
+.input-data textarea:valid~label {
+    transform: translateY(-30px);
+    font-size: 12px;
+}
+
+.input-data label {
+    font-size: 12px;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    color: #777;
+    transition: all 0.3s ease;
+}
+
 
 .wrapper-contacto form .p button {
     margin-top: 10px;
@@ -1078,9 +1104,23 @@ footer .container-footer .footer-license {
         height: 220px;
     }
 
+    .wrapper-contacto {
+        height: 290px;
+    }
+
     .wrapper-contacto form .p {
         padding: 10px;
         font-size: 12px;
+    }
+
+    .input-data label {
+        bottom: 30px;
+        left: 10px;
+    }
+
+    .input-data input:focus~label,
+    .input-data input:valid~label {
+        transform: translateY(-30px);
     }
 }
 
@@ -1161,7 +1201,7 @@ footer .container-footer .footer-license {
     }
 
     .cards:hover {
-        width: 310px;
+        width: 240px;
         height: 210px;
     }
 
@@ -1171,18 +1211,32 @@ footer .container-footer .footer-license {
 
     .wrapper-contacto,
     .wrapper-datos-personales {
-        height: 250px;
+        height: 280px;
+    }
+
+    .wrapper-contacto form {
+        height: 100%;
     }
 
     .wrapper-contacto form .p {
-        padding: 12px;
+        padding: 10px;
         font-size: 15px;
-        height: 60px;
     }
 
     .wrapper-contacto form .p button {
         padding: 6px;
         font-size: 15px;
+    }
+
+    .input-data input:focus~label,
+    .input-data input:valid~label {
+        transform: translateY(-25px);
+        font-size: 13px;
+    }
+
+    .input-data label {
+        font-size: 15px;
+        left: 12px;
     }
 
     .wrapper-datos-personales .content-dp button {
@@ -1231,6 +1285,18 @@ footer .container-footer .footer-license {
 
     .wrapper-datos-personales .content-dp button {
         font-size: 17px;
+    }
+
+    .input-data input:focus~label,
+    .input-data input:valid~label {
+        transform: translateY(-35px);
+        font-size: 13px;
+    }
+
+    .input-data label {
+        font-size: 15px;
+        left: 15px;
+        bottom: 40px;
     }
 
     .wrapper-datos-personales .content-dp {
@@ -1428,6 +1494,21 @@ footer .container-footer .footer-license {
 
     .wrapper-contacto form .block-top {
         height: 100%;
+    }
+
+    .input-data input:focus~label,
+    .input-data input:valid~label {
+        transform: translateY(-38px);
+    }
+
+    .input-data textarea:focus~label,
+    .input-data textarea:valid~label {
+        transform: translateY(-70px);
+    }
+
+    .input-data label {
+        font-size: 17px;
+        left: 10px;
     }
 
     footer .container-footer .footer-logo img {
