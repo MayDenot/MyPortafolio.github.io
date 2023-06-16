@@ -758,8 +758,9 @@ ul[data-animation="to-left"] a::before {
 }
 
 .cards .card-body a:hover {
-    background-color: transparent;
-    border: 2px solid #00D1FF;
+    background-color: #fff;
+    color: #000000;
+    border: none;
 }
 
 #contacto {
@@ -1138,7 +1139,7 @@ footer .container-footer .footer-license {
     }
 
     .wrapper-cards {
-        grid-template-columns: 300px 300px;
+        grid-template-columns: 230px 230px 230px;
         gap: 15px;
     }
 
