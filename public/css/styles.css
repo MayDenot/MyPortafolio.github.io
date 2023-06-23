@@ -208,8 +208,8 @@ ul[data-animation="to-left"] a::before {
 }
 
 .container-social-media ul li a i:hover {
-    transition: all .5s linear;
-    transform: rotateY(180deg);
+    transition: all .3s;
+    scale: 1.2;
     color: aqua;
 }
 
@@ -978,8 +978,8 @@ footer .container-footer .footer-license {
 }
 
 .footer-social-media ul li a i:hover {
-    transition: all .5s linear;
-    transform: rotateY(180deg);
+    transition: all .3s;
+    scale: 1.2;
     color: aqua;
 }
 
@@ -1200,11 +1200,6 @@ footer .container-footer .footer-license {
         font-size: 15px;
     }
 
-    .cards:hover {
-        width: 240px;
-        height: 210px;
-    }
-
     .content-contacto {
         grid-template-columns: 500px;
     }
@@ -1251,6 +1246,14 @@ footer .container-footer .footer-license {
 
 @media screen and (min-width: 1024px) {
 
+    .head .profile img {
+        transition: all .3s;
+    }
+
+    .head .profile img:hover {
+        scale: 1.2;
+    }
+
     .wrapper-sobremi {
         margin-top: 25px;
         grid-template-columns: 650px;
@@ -1266,6 +1269,10 @@ footer .container-footer .footer-license {
 
     .wrapper-habilidades .herramientas .herramientas-img .content i {
         font-size: 70px;
+    }
+
+    .cards:hover {
+        scale: 1.1;
     }
 
     .content-contacto {
@@ -1404,6 +1411,11 @@ footer .container-footer .footer-license {
 
     .wrapper-habilidades .lenguajes .lenguajes-img .content i {
         font-size: 78px;
+        transition: all .3s;
+    }
+
+    .wrapper-habilidades .lenguajes .lenguajes-img .content i:hover {
+        scale: 1.2;
     }
 
     .wrapper-habilidades .herramientas .herramientas-img {
@@ -1412,6 +1424,11 @@ footer .container-footer .footer-license {
 
     .wrapper-habilidades .herramientas .herramientas-img .content i {
         font-size: 78px;
+        transition: all .3s;
+    }
+
+    .wrapper-habilidades .herramientas .herramientas-img .content i:hover {
+        scale: 1.2;
     }
 
     .content li .head-bar h5 {
@@ -1440,6 +1457,10 @@ footer .container-footer .footer-license {
         padding: 0 20px;
     }
 
+    .cards:hover {
+        scale: 1.05;
+    }
+
     .cards .img-card img {
         width: 100%;
     }
@@ -1455,11 +1476,6 @@ footer .container-footer .footer-license {
     .cards .card-body a {
         padding: 4px;
         font-size: 18px;
-    }
-
-    .cards:hover {
-        width: 360px;
-        height: 260px;
     }
 
     .content-contacto {
