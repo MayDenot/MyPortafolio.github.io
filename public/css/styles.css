@@ -23,6 +23,7 @@ html::-webkit-scrollbar {
 html::-webkit-scrollbar-thumb {
     background-color: #fff;
     height: 20vh;
+    border-radius: 20px;
 }
 
 html::-webkit-scrollbar-track {
@@ -1265,14 +1266,24 @@ footer .container-footer .footer-license {
 
     .wrapper-habilidades .lenguajes .lenguajes-img .content i {
         font-size: 70px;
+        transition: all .3s;
     }
 
     .wrapper-habilidades .herramientas .herramientas-img .content i {
         font-size: 70px;
+        transition: all .3s;
+    }
+
+    .wrapper-habilidades .lenguajes .lenguajes-img .content i:hover {
+        scale: 1.1;
+    }
+
+    .wrapper-habilidades .herramientas .herramientas-img .content i:hover {
+        scale: 1.1;
     }
 
     .cards:hover {
-        scale: 1.1;
+        scale: 1.05;
     }
 
     .content-contacto {
@@ -1411,11 +1422,6 @@ footer .container-footer .footer-license {
 
     .wrapper-habilidades .lenguajes .lenguajes-img .content i {
         font-size: 78px;
-        transition: all .3s;
-    }
-
-    .wrapper-habilidades .lenguajes .lenguajes-img .content i:hover {
-        scale: 1.2;
     }
 
     .wrapper-habilidades .herramientas .herramientas-img {
@@ -1424,11 +1430,6 @@ footer .container-footer .footer-license {
 
     .wrapper-habilidades .herramientas .herramientas-img .content i {
         font-size: 78px;
-        transition: all .3s;
-    }
-
-    .wrapper-habilidades .herramientas .herramientas-img .content i:hover {
-        scale: 1.2;
     }
 
     .content li .head-bar h5 {
@@ -1455,10 +1456,6 @@ footer .container-footer .footer-license {
     .cards {
         height: 250px;
         padding: 0 20px;
-    }
-
-    .cards:hover {
-        scale: 1.05;
     }
 
     .cards .img-card img {
