@@ -823,7 +823,7 @@ ul[data-animation="to-left"] a::before {
     font-size: 12px;
     padding-top: 5px;
     text-align: end;
-    color: #888;
+    color: #C0C0C0;
 }
 
 .wrapper-contacto form .p input,
@@ -875,7 +875,7 @@ textarea {
     position: absolute;
     bottom: 20px;
     left: 0;
-    color: #777;
+    color: #C0C0C0;
     transition: all 0.3s ease;
 }
 
