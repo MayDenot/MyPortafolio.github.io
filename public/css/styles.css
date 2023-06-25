@@ -211,6 +211,7 @@ ul[data-animation="to-left"] a::before {
 
 .container-social-media ul li a i:hover {
     transition: all .3s;
+    transform: rotate(15deg);
     scale: 1.2;
     color: aqua;
 }
@@ -243,7 +244,7 @@ ul[data-animation="to-left"] a::before {
     font-size: 20px;
 }
 
-.container-home-text h2 {
+.container-home-text .name {
     font-size: 30px;
     background-clip: border-box;
     background: linear-gradient(90deg, rgba(0, 209, 255, 1) 27%, rgba(23, 93, 199, 1) 61%);
@@ -257,6 +258,24 @@ ul[data-animation="to-left"] a::before {
 
 .container-home-text h4 span {
     color: #17A7C7;
+}
+
+.container-home-text a {
+    width: 60%;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 15px;
+    color: #fff;
+    box-shadow: 0 0 4px #fff;
+}
+
+.container-home-text a:hover {
+    transition: all .3s; 
+    scale: 1.1;
+    color: #00D1FF;
+    box-shadow: 0 0 4px #00D1FF;
 }
 
 /* Animacion del emoji saludar */
@@ -822,6 +841,7 @@ footer .container-footer .footer-license {
 
 .footer-social-media ul li a i:hover {
     transition: all .3s;
+    transform: rotate(15deg);
     scale: 1.2;
     color: aqua;
 }
@@ -1026,6 +1046,10 @@ footer .container-footer .footer-license {
         scale: 1.2;
     }
 
+    .container-home-text a {
+        width: 50%;
+    }
+
     .wrapper-sobremi {
         margin-top: 25px;
         /* grid-template-columns: 650px; */
@@ -1092,6 +1116,10 @@ footer .container-footer .footer-license {
 
     .container-home-text h4 {
         font-size: 25px;
+    }
+
+    .container-home-text a {
+        width: 40%;
     }
 
     #home .wrapper-home {
