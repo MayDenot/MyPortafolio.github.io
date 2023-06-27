@@ -114,10 +114,6 @@ body.lightmode .head .profile img {
     display: none;
 }
 
-body.lightmode .head .profile img {
-    display: none;
-}
-
 #btn {
     position: relative;
     left: 50px;
@@ -445,17 +441,13 @@ body.lightmode .container-home-img img  {
 }
 
 .titulo {
+    display: block;
     position: relative;
     font-size: 2em;
     color: grey;
     width: 100%;
     text-align: center;
     -webkit-box-reflect: below -14px linear-gradient(transparent, #0004);
-}
-
-body.lightmode .titulo {
-    color: #fff;
-    -webkit-box-reflect: below -14px linear-gradient(transparent, #fff);
 }
 
 .titulo span {
@@ -500,6 +492,56 @@ body.lightmode .titulo {
     }
 }
 
+body.lightmode .titulo {
+    position: relative;
+    font-size: 2em;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+
+body.lightmode .titulo span {
+    animation: animate-title-lightmode 5s linear infinite;
+}
+
+body.lightmode .titulo span:nth-child(even) {
+    animation-delay: 0.4s;
+}
+
+@keyframes animate-title-lightmode {
+
+    0%,
+    18%,
+    20%,
+    50.1%,
+    60%,
+    65.1%,
+    80%,
+    90.1%,
+    92% {
+        color: #9D9D9D;
+        text-shadow: none;
+    }
+
+    18.1%,
+    20.1%,
+    30%,
+    50%,
+    60.1%,
+    65%,
+    80.1%,
+    90%,
+    92.1%,
+    100% {
+        color: #9D9D9D;
+        text-shadow: 0 0 10px #444444,
+            0 0 20px #444444,
+            0 0 40px #444444,
+            0 0 80px #444444,
+            0 0 160px #444444;
+    }
+}
+
 .container-sobremi {
     height: 100vh;
     display: flex;
@@ -516,13 +558,48 @@ body.lightmode .titulo {
 }
 
 .wrapper-sobremi img {
+    clip-path: polygon(0 1%, 2% 0, 98% 0, 100% 4%, 100% 97%, 100% 100%, 1% 100%, 0 98%);
     width: 90%;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
     transition: all 0.4s ease-in-out;
     animation: float 5s ease-in-out infinite;
 }
 
+.wrapper-sobremi .lightmode {
+    display: none;
+}
+
 @keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+
+    50% {
+        transform: translatey(-20px);
+    }
+
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+body.lightmode .wrapper-sobremi .lightmode {
+    clip-path: polygon(0 1%, 2% 0, 98% 0, 100% 4%, 100% 97%, 100% 100%, 1% 100%, 0 98%);
+    width: 90%;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+    transition: all 0.4s ease-in-out;
+    animation: float-lightmode 5s ease-in-out infinite;
+}
+
+body.lightmode .wrapper-sobremi img {
+    display: none;
+}
+
+body.lightmode .wrapper-sobremi .lightmode {
+    display: block;
+}
+
+@keyframes float-lightmode {
     0% {
         transform: translatey(0px);
     }
@@ -581,7 +658,9 @@ body.lightmode .wrapper-habilidades {
 }
 
 .lenguajes-img .content {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .wrapper-habilidades .lenguajes .lenguajes-img .content i {
@@ -589,7 +668,9 @@ body.lightmode .wrapper-habilidades {
 }
 
 .wrapper-habilidades .herramientas {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .wrapper-habilidades .herramientas h2 {
@@ -780,6 +861,10 @@ body.lightmode .footer-social-media ul li a i:hover {
         -webkit-box-reflect: below -18px linear-gradient(transparent, #0004);
     }
 
+    body.lightmode .titulo {
+        font-size: 2.7em;
+    }
+
     .wrapper-sobremi {
         margin-top: 10px;
     }
@@ -800,6 +885,10 @@ body.lightmode .footer-social-media ul li a i:hover {
 @media screen and (min-width: 425px) {
 
     .titulo {
+        font-size: 3em;
+    }
+
+    body.lightmode .titulo {
         font-size: 3em;
     }
 
@@ -841,6 +930,10 @@ body.lightmode .footer-social-media ul li a i:hover {
     .titulo {
         font-size: 5em;
         -webkit-box-reflect: below -34px linear-gradient(transparent, #0004);
+    }
+
+    body.lightmode .titulo {
+        font-size: 5em;
     }
 
     .wrapper-sobremi {
@@ -1005,6 +1098,10 @@ body.lightmode .footer-social-media ul li a i:hover {
     .titulo {
         font-size: 7em;
         -webkit-box-reflect: below -50px linear-gradient(transparent, #0004);
+    }
+
+    body.lightmode .titulo {
+        font-size: 7em;
     }
 
     .wrapper-sobremi {
