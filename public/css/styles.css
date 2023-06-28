@@ -16,7 +16,7 @@ body {
 }
 
 body.lightmode {
-    background: radial-gradient(circle, rgba(198,198,201,1) 48%, rgba(187,187,187,1) 65%, rgba(184,184,184,1) 72%, rgba(168,166,166,1) 86%);
+    background: #B8B8B8;
 }
 
 html::-webkit-scrollbar {
@@ -77,6 +77,50 @@ label::selection {
     background-color: #636464;
 }
 
+/* Lightmode */
+body.lightmode span::selection {
+    background-color: #ffffff;
+}
+body.lightmode h1::selection {
+    background-color: #ffffff;
+}
+
+body.lightmode h2::selection {
+    background-color: #ffffff;
+}
+
+body.lightmode h3::selection {
+    background-color: #ffffff;
+}
+
+body.lightmode h4::selection {
+    background-color: #ffffff;
+}
+
+body.lightmode h5::selection {
+    background-color: #ffffff;
+}
+
+body.lightmode p::selection {
+    background-color: #ffffff;
+}
+
+body.lightmode a::selection {
+    background-color: #ffffff;
+}
+
+body.lightmode button::selection {
+    background-color: #ffffff;
+}
+
+body.lightmode li::selection {
+    background-color: #ffffff;
+}
+
+body.lightmode label::selection {
+    background-color: #ffffff;
+}
+
 #slidebar {
     position: fixed;
     width: 200px;
@@ -135,6 +179,20 @@ body.lightmode #btn i {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.checkbox-wrapper i {
+    color: #fff;
+}
+
+body.lightmode .checkbox-wrapper i {
+    color: #000000;
 }
 
 .checkbox-wrapper input[type=checkbox] {
@@ -359,6 +417,7 @@ body.lightmode .container-home-text h4 span {
     border-radius: 15px;
     color: #fff;
     box-shadow: 0 0 4px #fff;
+    border: 1px solid #fff;
 }
 
 .container-home-text a:hover {
@@ -372,7 +431,9 @@ body.lightmode .container-home-text h4 span {
 body.lightmode .container-home-text a {
     color: #000000;
     box-shadow: 0 0 4px #000000;
+    border: 1px solid #000000;
 }
+
 body.lightmode .container-home-text a:hover {
     color: #fff;
     box-shadow: 0 0 4px #000000;
@@ -551,66 +612,57 @@ body.lightmode .titulo span:nth-child(even) {
 }
 
 .wrapper-sobremi {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 250px;
+    justify-items: center;
+}
+
+.img-provisoria {
+    width: 180px;
+    height: 150px;
+    background-color: #0064FF;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+body.lightmode .img-provisoria {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 50px 120px -20px, rgba(0, 0, 0, 0.4) 0px 30px 60px -30px;
+} 
+
+.wrapper-sobremi-text {
+    padding-top: 10px;
+    color: #fff;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 50px;
+    flex-direction: column;
 }
 
-.wrapper-sobremi img {
-    clip-path: polygon(0 1%, 2% 0, 98% 0, 100% 4%, 100% 97%, 100% 100%, 1% 100%, 0 98%);
-    width: 90%;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
-    transition: all 0.4s ease-in-out;
-    animation: float 5s ease-in-out infinite;
+body.lightmode .wrapper-sobremi-text {
+    color: #000000;
+    font-weight: 600;
 }
 
-.wrapper-sobremi .lightmode {
-    display: none;
+.wrapper-sobremi-text p {
+    font-size: 15px;
 }
 
-@keyframes float {
-    0% {
-        transform: translatey(0px);
-    }
-
-    50% {
-        transform: translatey(-20px);
-    }
-
-    100% {
-        transform: translatey(0px);
-    }
+.wrapper-sobremi-text p span {
+    color: #00D1FF;
 }
 
-body.lightmode .wrapper-sobremi .lightmode {
-    clip-path: polygon(0 1%, 2% 0, 98% 0, 100% 4%, 100% 97%, 100% 100%, 1% 100%, 0 98%);
-    width: 90%;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
-    transition: all 0.4s ease-in-out;
-    animation: float-lightmode 5s ease-in-out infinite;
+body.lightmode .wrapper-sobremi-text p span {
+    color: #0064FF;
 }
 
-body.lightmode .wrapper-sobremi img {
-    display: none;
+.wrapper-sobremi-text .tit-fa {
+    font-size: 17px;
 }
 
-body.lightmode .wrapper-sobremi .lightmode {
-    display: block;
+.wrapper-sobremi-text .periodo {
+    color: #00D1FF;
 }
 
-@keyframes float-lightmode {
-    0% {
-        transform: translatey(0px);
-    }
-
-    50% {
-        transform: translatey(-20px);
-    }
-
-    100% {
-        transform: translatey(0px);
-    }
+body.lightmode .wrapper-sobremi-text .periodo {
+    color: #0064FF;
 }
 
 #habilidades {
@@ -866,7 +918,13 @@ body.lightmode .footer-social-media ul li a i:hover {
     }
 
     .wrapper-sobremi {
-        margin-top: 10px;
+        grid-template-columns: 305px;
+    }
+    
+    .img-provisoria {
+        width: 100%;
+        height: 180px;
+        background-color: #0064FF;
     }
 
     .wrapper-cards {
@@ -893,7 +951,13 @@ body.lightmode .footer-social-media ul li a i:hover {
     }
 
     .wrapper-sobremi {
-        margin-top: 20px;
+        grid-template-columns: 355px;
+    }
+    
+    .img-provisoria {
+        width: 285px;
+        height: 180px;
+        background-color: #0064FF;
     }
 
     .wrapper-habilidades .lenguajes .lenguajes-img .content i {
@@ -937,7 +1001,16 @@ body.lightmode .footer-social-media ul li a i:hover {
     }
 
     .wrapper-sobremi {
-        margin-top: 20px;
+        grid-template-columns: 349px 349px;
+        align-items: start;
+    }
+
+    .wrapper-sobremi-text {
+        padding: 0;
+    }
+
+    .wrapper-sobremi .img-provisoria {
+        height: 250px;
     }
 
     .wrapper-habilidades .lenguajes h2 {
@@ -1007,11 +1080,9 @@ body.lightmode .footer-social-media ul li a i:hover {
     }
 
     .wrapper-sobremi {
-        margin-top: 25px;
-    }
-
-    .wrapper-sobremi img {
-        width: 100%;
+        margin-top: 35px;
+        grid-template-columns: 350px 440px;
+        align-items: start;
     }
 
     .wrapper-habilidades .lenguajes .lenguajes-img {
@@ -1078,7 +1149,7 @@ body.lightmode .footer-social-media ul li a i:hover {
     }
 
     .container-home-text a {
-        width: 40%;
+        width: 35%;
     }
 
     #home .wrapper-home {
@@ -1104,11 +1175,27 @@ body.lightmode .footer-social-media ul li a i:hover {
         font-size: 7em;
     }
 
+    .container-home-img img {
+        width: 100%;
+        margin-left: 50px;
+    }
+
     .wrapper-sobremi {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding-top: 100px;
+        margin-top: 80px;
+        grid-template-columns: 600px 640px;
+    }
+
+    .wrapper-sobremi-text p {
+        font-size: 20px;
+    }
+
+    .wrapper-sobremi-text .tit-fa {
+        font-size: 25px;
+    }
+
+    .wrapper-sobremi .img-provisoria {
+        width: 400px;
+        height: 350px;
     }
 
     .wrapper-habilidades .lenguajes h2 {
