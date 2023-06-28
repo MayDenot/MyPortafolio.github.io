@@ -745,6 +745,37 @@ body.lightmode .wrapper-habilidades {
     font-size: 40px;
 }
 
+.fa-html5 {
+    color: #FF7200;
+}
+.fa-css3-alt {
+    color: #00B1FF;
+}
+
+.fa-js {
+    color: #FFD000;
+}
+
+.fa-database {
+    color: #000000;
+}
+
+.fa-bootstrap {
+    color: #9600FF;
+}
+
+.fa-figma {
+    color: #00FF9E;
+}
+
+body.lightmode .fa-figma {
+    color: #078025;
+}
+
+body.lightmode .fa-js  {
+    color: #C1980A;
+}
+
 .wrapper-habilidades .lenguajes .lenguajes-img .content p {
     text-align: center;
     margin-top: 10px;
