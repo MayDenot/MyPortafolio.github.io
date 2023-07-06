@@ -13,9 +13,9 @@ blight.addEventListener('click', (e) => {
     body.classList.toggle('lightmode');
 });
 
-const btnDescription = document.querySelectorAll('.btn-description');
+const btnDescription = document.querySelectorAll(".btn-description");
 const cardBody = document.querySelector(".card-body");
-const btnClose = document.querySelector('.btn-close');
+const btnsClose = document.querySelectorAll(".btn-close");
 const fullImg = document.querySelectorAll(".full-img");
 
 document.querySelectorAll('.btn-description').forEach((cardBody, index) => {
@@ -28,6 +28,10 @@ document.querySelectorAll('.btn-description').forEach((cardBody, index) => {
             fullImg[index].style.display = "none";
         }
     });
+
+    for(let i = 0; i < btnsClose.length; i++) {
+        btnsClose[i].addEventListener('click', () => {
+            fullImg[index].style.display = "none";
+        })
+    }
 });
-
-
