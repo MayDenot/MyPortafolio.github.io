@@ -4,7 +4,7 @@ const slideBar = document.getElementById("slidebar");
 
 btnBar.addEventListener('click', () => {
     slideBar.classList.toggle('desplegar');
-})
+});
 
 const blight = document.querySelector('#switch');
 const body = document.querySelector('body');
@@ -12,3 +12,22 @@ const body = document.querySelector('body');
 blight.addEventListener('click', (e) => {
     body.classList.toggle('lightmode');
 });
+
+const btnDescription = document.querySelectorAll('.btn-description');
+const cardBody = document.querySelector(".card-body");
+const btnClose = document.querySelector('.btn-close');
+const fullImg = document.querySelectorAll(".full-img");
+
+document.querySelectorAll('.btn-description').forEach((cardBody, index) => {
+    cardBody.addEventListener('click', () => {
+        fullImg[index].style.display = "flex";
+    });
+
+    window.addEventListener("keydown", (e) => {
+        if (e.key == "Escape") {
+            fullImg[index].style.display = "none";
+        }
+    });
+});
+
+
