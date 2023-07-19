@@ -152,7 +152,7 @@ body.lightmode label::selection {
     flex-direction: column;
     box-shadow: 0 0 15px #121212;
     top: 0;
-    transition: all .5s ease-in-out;
+    transition: .5s ease-in-out;
     left: -200px;
 }
 
@@ -260,7 +260,7 @@ body.lightmode .checkbox-wrapper i {
 
 .desplegar {
     transform: translateX(100%);
-    transition: all .5s ease-in-out;
+    transition: .5s ease-in-out;
 }
 
 #slidebar nav ul {
@@ -357,7 +357,7 @@ body.lightmode ul a::before {
 }
 
 .container-social-media ul li a i:hover {
-    transition: all .3s;
+    transition: .3s;
     transform: rotate(15deg);
     scale: 1.2;
     color: var(--primary-color-1);
@@ -441,7 +441,7 @@ body.lightmode .container-home-text h4 span {
 }
 
 .container-home-text a:hover {
-    transition: all .3s;
+    transition: .3s;
     scale: 1.05;
     color: #000000;
     background-color: var(--primary-color-1);
@@ -625,7 +625,7 @@ body.lightmode .wrapper-habilidades {
 
 .wrapper-habilidades .herramientas .herramientas-img {
     display: grid;
-    grid-template-columns: 50px 50px 50px;
+    grid-template-columns: 50px 50px 50px 50px;
     gap: 25px;
     justify-content: center;
     justify-items: center;
@@ -634,6 +634,11 @@ body.lightmode .wrapper-habilidades {
 .wrapper-habilidades .herramientas .herramientas-img .content i {
     font-size: 40px;
 }
+
+.wrapper-habilidades .herramientas .herramientas-img .content img {
+    width: 40px;
+    height: 40px;
+} 
 
 .fa-html5 {
     color: #FF7200;
@@ -798,6 +803,19 @@ body.lightmode .cards .card-body .links a:hover {
     font-size: 12px;
 }
 
+.cards-info .lenguajes-tecnologias img {
+    width: 18px;
+    height: 18px;
+}
+
+.lenguajes-tecnologias {
+    margin-top: 10px;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
 .full-img {
     position: fixed;
     top: 0;
@@ -810,7 +828,7 @@ body.lightmode .cards .card-body .links a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    transition: all .3s;
+    transition: .3s;
 }
 
 .full-img span {
@@ -880,7 +898,7 @@ body.lightmode .footer-social-media ul li a i {
 }
 
 .footer-social-media ul li a i:hover {
-    transition: all .3s;
+    transition: .3s;
     transform: rotate(15deg);
     scale: 1.2;
     color: var(--primary-color-1);
@@ -921,6 +939,11 @@ body.lightmode .footer-social-media ul li a i:hover {
     .wrapper-habilidades .herramientas .herramientas-img .content i {
         font-size: 50px;
     }
+
+    .wrapper-habilidades .herramientas .herramientas-img .content img {
+        width: 50px;
+        height: 50px;
+    } 
 }
 
 @media screen and (min-width: 425px) {
@@ -942,6 +965,11 @@ body.lightmode .footer-social-media ul li a i:hover {
     .wrapper-habilidades .herramientas .herramientas-img .content i {
         font-size: 55px;
     }
+
+    .wrapper-habilidades .herramientas .herramientas-img .content img {
+        width: 55px;
+        height: 55px;
+    } 
 
     .wrapper-cards {
         grid-template-columns: 280px;
@@ -966,6 +994,11 @@ body.lightmode .footer-social-media ul li a i:hover {
 
     .lenguajes-tecnologias {
         font-size: 22px;
+    }
+
+    .cards-info .lenguajes-tecnologias img {
+        width: 23px;
+        height: 23px;
     }
 }
 
@@ -1016,6 +1049,12 @@ body.lightmode .footer-social-media ul li a i:hover {
         font-size: 60px;
     }
 
+    .wrapper-habilidades .herramientas .herramientas-img .content img {
+        transition: .3s;
+        width: 60px;
+        height: 60px;
+    } 
+
     .wrapper-habilidades .herramientas h2 {
         font-size: 2em;
     }
@@ -1052,6 +1091,11 @@ body.lightmode .footer-social-media ul li a i:hover {
         margin-top: 20px;
         font-size: 25px;
     }
+
+    .cards-info .lenguajes-tecnologias img {
+        width: 26px;
+        height: 26px;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -1065,7 +1109,7 @@ body.lightmode .footer-social-media ul li a i:hover {
     }
 
     .head .profile img {
-        transition: all .3s;
+        transition: .3s;
     }
 
     .head .profile img:hover {
@@ -1100,12 +1144,21 @@ body.lightmode .footer-social-media ul li a i:hover {
 
     .wrapper-habilidades .lenguajes .lenguajes-img .content i {
         font-size: 70px;
-        transition: all .3s;
+        transition: .3s;
     }
 
     .wrapper-habilidades .herramientas .herramientas-img .content i {
         font-size: 70px;
-        transition: all .3s;
+        transition: .3s;
+    }
+
+    .wrapper-habilidades .herramientas .herramientas-img .content img {
+        width: 70px;
+        height: 70px;
+    } 
+
+    .wrapper-habilidades .herramientas .herramientas-img .content img:hover {
+        scale: 1.1;
     }
 
     .wrapper-habilidades .lenguajes .lenguajes-img .content p {
@@ -1152,6 +1205,11 @@ body.lightmode .footer-social-media ul li a i:hover {
     .wrapper-cards {
         margin-left: 0;
     }
+
+    .wrapper-habilidades .herramientas .herramientas-img .content img {
+        width: 70px;
+        height: 70px;
+    } 
 }
 
 @media screen and (min-width: 1440px) {
@@ -1255,6 +1313,11 @@ body.lightmode .footer-social-media ul li a i:hover {
         font-size: 78px;
     }
 
+    .wrapper-habilidades .herramientas .herramientas-img .content img {
+        width: 75px;
+        height: 75px;
+    } 
+
     .wrapper-cards {
         grid-template-columns: 350px 350px 350px;
         gap: 30px;
@@ -1299,6 +1362,11 @@ body.lightmode .footer-social-media ul li a i:hover {
 
     .lenguajes-tecnologias {
         font-size: 30px;
+    }
+
+    .cards-info .lenguajes-tecnologias img {
+        width: 35px;
+        height: 35px;
     }
 
     footer .container-footer .footer-logo img {
