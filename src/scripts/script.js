@@ -1,10 +1,9 @@
+// const btnBar = document.getElementById("btn");
+// const slideBar = document.getElementById("slidebar");
 
-const btnBar = document.getElementById("btn");
-const slideBar = document.getElementById("slidebar");
-
-btnBar.addEventListener('click', () => {
-    slideBar.classList.toggle('desplegar');
-});
+// btnBar.addEventListener('click', () => {
+//     slideBar.classList.toggle('desplegar');
+// });
 
 const blight = document.querySelector('#switch');
 const body = document.querySelector('body');
@@ -29,7 +28,7 @@ document.querySelectorAll('.btn-description').forEach((cardBody, index) => {
         }
     });
 
-    for(let i = 0; i < btnsClose.length; i++) {
+    for (let i = 0; i < btnsClose.length; i++) {
         btnsClose[i].addEventListener('click', () => {
             fullImg[index].style.display = "none";
         })

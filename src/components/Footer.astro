@@ -1,0 +1,72 @@
+---
+import IconGithub from "./IconGithub.astro";
+import IconInstagram from "./IconInstagram.astro";
+import IconGmail from "./IconGmail.astro";
+import IconLinkedin from "./IconLinkedin.astro";
+---
+<!-- 
+.footer-social-media ul li a i {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: white;
+}
+.footer-social-media ul li a i:hover {
+    transition: .3s;
+    transform: rotate(15deg);
+    scale: 1.2;
+    color: var(--primary-color-1);
+}
+-->
+<footer class="w-full h-[200px]">
+  <div id="container-footer" class="flex flex-col items-center justify-center">
+    <div class="footer-logo">
+      <img class="w-[80px]" src="../assets/LogoPortafolio.webp" alt="Logo MD" />
+    </div>
+    <div class="footer-social-media">
+      <div class="container-footer-social-media">
+        <ul class="flex [&>li]:m-[5px] [&>li]:list-none">
+          <li>
+            <a
+              href="https://github.com/MayDenot"
+              target="_blank"
+              aria-label="Ir a GitHub.com"
+            >
+              <IconGithub />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/maydenot/"
+              target="_blank"
+              aria-label="Ir a Instagram.com"
+            >
+              <IconInstagram />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/mayra-denot-dev/"
+              target="_blank"
+              aria-label="Ir a Linkedin.com"
+            >
+              <IconLinkedin />
+            </a>
+          </li>
+          <li>
+            <a
+              href="mailto:mayra.denot@gmail.com"
+              target="_blank"
+              aria-label="Ir a Gmail.com"
+            >
+              <IconGmail />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="footer-license" class="text-center text-[#fff] [&>h4]:pb-[10px] [&>h4]:text-[14px]">
+      <h4>2023 Hecho con amor desde Argentina</h4>
+      <h4>Mayra Andrea Denot</h4>
+    </div>
+  </div>
+</footer>

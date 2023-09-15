@@ -1,0 +1,79 @@
+---
+import IconHTML from "./IconHTML.astro";
+import IconBS from "./IconBS.astro";
+import IconCSS from "./IconCSS.astro";
+import IconJS from "./IconJS.astro";
+import IconTW from "./IconTW.astro";
+import IconDB from "./IconDB.astro";
+import IconFigma from "./IconFigma.astro";
+import IconGithub from "./IconGithub.astro";
+import IconAstro from "./IconAstro.astro";
+---
+<!-- 
+.wrapper-habilidades .lenguajes .lenguajes-img .content i {
+    font-size: 40px;
+}
+.wrapper-habilidades .herramientas .herramientas-img .content i {
+    font-size: 40px;
+}
+-->
+<section id="habilidades" class="w-full h-screen">
+  <div id="container-habilidades" class="h-screen flex flex-col items-center justify-center">
+    <h2 class="titulo">
+      <span>HABILIDADES</span>
+    </h2>
+    <br />
+    <br />
+    <div id="wrapper-habilidades" class="flex flex-col items-center text-[#fff]">
+      <div id="lenguajes" class="flex flex-col items-center">
+        <h2 class="text-[1.4em]">Lenguajes</h2>
+        <br />
+        <div id="lenguajes-img" class="grid grid-cols-4 gap-[10px] [&>div>svg]:h-[40px] [&>div>svg]:w-[40px] [&>div>p]:mt-[10px] [&>div>p]:text-[13px] [&>div>p]:text-center">
+          <div class="content flex flex-col items-center">
+            <IconHTML />
+            <p>HTML</p>
+          </div>
+          <div class="content flex flex-col items-center">
+            <IconCSS />
+            <p>CSS</p>
+          </div>
+          <div class="content flex flex-col items-center">
+            <IconJS />
+            <p>JavaScript</p>
+          </div>
+          <div class="content flex flex-col items-center">
+            <IconDB />
+            <p>SQL</p>
+          </div>
+        </div>
+      </div>
+      <br />
+      <div id="herramientas" class="flex flex-cols items-center">
+        <h2 class="text-[1.4em]">Herramientas</h2>
+        <br />
+        <div id="herramientas-img" class="grid grid-cols-4 gap-[25px] justify-center justify-items-center [&>div>svg]:h-[40px] [&>div>svg]:w-[40px] [&>div>p]:mt-[10px] [&>div>p]:text-[13px] [&>div>p]:text-center">
+          <div id="content">
+            <IconBS />
+            <p>Bootstrap</p>
+          </div>
+          <div class="content">
+            <IconFigma />
+            <p>Figma</p>
+          </div>
+          <div class="content">
+            <IconGithub />
+            <p>Github</p>
+          </div>
+          <div class="content">
+            <IconTW />
+            <p>Tailwind</p>
+          </div>
+          <div class="content">
+            <IconAstro />
+            <p>Astro</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

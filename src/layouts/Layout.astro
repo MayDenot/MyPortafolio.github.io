@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="es" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/assets/IconoPortafolio2.ico" type="image/x-icon" />
+    <title>Mayra Denot | Portafolio</title>
+  </head>
+  <body class="bg-bg-gradient-body">
+    <slot />
+  </body>
+</html>
+
+<style is:global>
+  :root {
+    --primary-color-1: #00d1ff;
+    --primary-color-2: #323234;
+    --lg-dark: linear-gradient(
+      90deg,
+      rgba(0, 209, 255, 1) 8%,
+      rgba(17, 176, 211, 1) 28%,
+      rgba(16, 167, 200, 1) 39%,
+      rgba(13, 143, 171, 1) 64%
+    );
+    --lg-light: linear-gradient(
+      90deg,
+      rgba(13, 143, 171, 1) 8%,
+      rgba(7, 102, 123, 1) 28%,
+      rgba(6, 76, 91, 1) 64%
+    );
+    --others-1: #46deff;
+    --others-2: #6de5ff;
+    --others-3: #b1f1ff;
+    --others-4: #5d5d60;
+    --others-5: #11b0d3;
+    --others-6: #0d8fab;
+    --others-7: #064c5b;
+    --others-8: #747477;
+    --others-9: #5d5d60;
+    --others-10: #afafb2;
+    --light-color: #ecfcff;
+    --dark-color: #050404;
+    --primary-light-color: #07667b;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oxygen", "Poppins", sans-serif;
+  }
+  .desplegar {
+    transform: translateX(100%);
+    transition: 0.5s ease-in-out;
+  }
+</style>
+
+<script type="module">
+  const btnBar = document.getElementById("btn");
+  const slideBar = document.getElementById("slidebar");
+
+  btnBar.addEventListener("click", () => {
+    slideBar.classList.toggle("desplegar");
+  });
+</script>

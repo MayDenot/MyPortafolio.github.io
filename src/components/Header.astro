@@ -1,0 +1,46 @@
+---
+import NavHeader from "./NavHeader.astro";
+---
+
+<header id="slidebar" class="fixed w-[200px] h-full backdrop-blur-[10px] z-10 flex flex-col shadow-3xl top-0 transition duration-500 ease-in-out left-[-200px]">
+  <div class="head text-[#fff] flex p-[10px] justify-between">
+    <div class="profile">
+      <a href="/">
+        <img
+          class="w-[80px]"
+          src="/assets/LogoPortafolio2.webp"
+          alt="Logo MD"
+          aria-label="Ir al inicio de página"
+        />
+      </a>
+      <a href="/">
+        <img
+          class="lightmode hidden"
+          src="/assets/LogoPortafolio.webp"
+          alt="Logo MD"
+          aria-label="Ir al inicio de página"
+        />
+      </a>
+    </div>
+    <label id="btn" class="relative left-[50px] h-auto" aria-label="Abrir y cerrar barra de navegación">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="icon icon-tabler icon-tabler-menu-2"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        stroke-width="2"
+        stroke="#fff"
+        fill="black"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M4 6l16 0"></path>
+        <path d="M4 12l16 0"></path>
+        <path d="M4 18l16 0"></path>
+      </svg>
+    </label>
+  </div>
+  <NavHeader />
+</header>
