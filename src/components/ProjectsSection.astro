@@ -6,6 +6,7 @@ import IconCSS from "./IconCSS.astro";
 import IconJS from "./IconJS.astro";
 import IconBS from "./IconBS.astro";
 import IconTW from "./IconTW.astro";
+import IconAstro from "./IconAstro.astro";
 ---
 
 <section id="proyectos" class="w-full h-screen">
@@ -24,15 +25,15 @@ import IconTW from "./IconTW.astro";
       [&>div]:left-0 [&>div]:w-full [&>div]:h-full [&>div]:z-100 [&>div]:bg-full-img [&>div]:hidden 
       [&>div]:flex-col [&>div>span]:absolute [&>div>span]:top-[20px] [&>div>span]:right-[20px] 
       [&>div]:items-center [&>div]:justify-center [&>div]:transition [&>div]:duration-300 [&>div>span]:text-[40px] 
-      [&>div>span]:text-[#fff] [&>div>span]:z-100 [&>div>span]:cursor-pointer [&>div>span]:font-bold md:grid-cols-p3
-      xl:grid-cols-pxl"
+      [&>div>span]:text-[#fff] [&>div>span]:z-100 [&>div>span]:cursor-pointer [&>div>span]:font-bold md:grid-cols-p2
+      md:grid-rows-2 xl:grid-cols-pxl"
     >
       <CardsProjects
         title="Marvel Web"
         src="../assets/ProyectoMarvel.webp"
         alt="Marvel Web"
         hrefgit="Marvel"
-        hrefdep="webmarvel"
+        hrefdep="webmarvel.vercel.app/"
         arialabel="Marvel"
       />
       <div class="full-img">
@@ -55,7 +56,7 @@ import IconTW from "./IconTW.astro";
         src="../assets/generadordecontraseñas.webp"
         alt="Generador de contraseñas"
         hrefgit="passwordgenerator"
-        hrefdep="passwordgenerator"
+        hrefdep="maydenot.github.io/passwordgenerator.github.io/"
         arialabel="Generador de contraseñas"
       />
       <div class="full-img">
@@ -77,7 +78,7 @@ import IconTW from "./IconTW.astro";
         src="../assets/ProyectoClimatech.webp"
         alt="Web del clima"
         hrefgit="Climatech"
-        hrefdep="climatechweb"
+        hrefdep="climatechweb.vercel.app/"
         arialabel="Climatech"
       />
       <div class="full-img">
@@ -89,6 +90,28 @@ import IconTW from "./IconTW.astro";
           class="lenguajes-tecnologias mt-[10px] flex gap-[5px] justify-center items-center"
         >
           <IconHTML />
+          <IconCSS />
+          <IconJS />
+        </div>
+        <span class="btn-close">X</span>
+      </div>
+      <CardsProjects
+        title="Blog de maydev"
+        src="../assets/ProyectoBlog.webp"
+        alt="Blog maydev"
+        hrefgit="blog-maydev"
+        hrefdep="blog-maydev.vercel.app/"
+        arialabel="Blog maydev"
+      />
+      <div class="full-img">
+        <CardsDescriptProjects
+          title="Blog maydev"
+          description="Este proyecto consta de un blog personal, el cual brinda información sobre programación, hardware, entre otras cosas."
+        />
+        <div
+          class="lenguajes-tecnologias mt-[10px] flex gap-[5px] justify-center items-center"
+        >
+          <IconAstro />
           <IconCSS />
           <IconJS />
         </div>
