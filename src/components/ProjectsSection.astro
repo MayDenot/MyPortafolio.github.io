@@ -7,80 +7,90 @@ import IconJS from "./IconJS.astro";
 import IconBS from "./IconBS.astro";
 import IconTW from "./IconTW.astro";
 ---
-<!-- 
-.cards-info .lenguajes-tecnologias img {
-    width: 18px;
-    height: 18px;
-}
--->
+
 <section id="proyectos" class="w-full h-screen">
-  <div id="container-proyectos" class="relative h-screen flex flex-col justify-evenly items-center">
-    <h2 class="titulo">
+  <div
+    id="container-proyectos"
+    class="relative h-screen flex flex-col justify-evenly items-center"
+  >
+    <h2
+      class="titulo font-semibold block relative text-[2em] w-full text-gray-400 text-center md:text-[3.1em]"
+    >
       <span>PROYECTOS</span>
     </h2>
-    <div class="grid grid-cols-[250px] justify-center items-center gap-[15px] [&>div]:fixed [&>div]:top-0 [&>div]:left-0 [&>div]:w-full [&>div]:h-full [&>div>span]:absolute
-      [&>div>span]:top-[20px] [&>div>span]:right-[20px] [&>div]:z-100 [&>div]:bg-full-img [&>div]:hidden [&>div]:flex-col [&>div]:items-center [&>div]:justify-center 
-      [&>div]:transition [&>div]:duration-300 [&>div>span]:text-[40px] [&>div>span]:text-[#fff] [&>div>span]:z-100 [&>div>span]:cursor-pointer [&>div>span]:font-bold" id="wrapper-cards">
+    <div
+      id="wrapper-cards"
+      class="grid grid-cols-[250px] justify-center items-center gap-[15px] [&>div]:fixed [&>div]:top-0 [&>div]:left-0 [&>div]:w-full [&>div]:h-full
+      [&>div]:z-100 [&>div]:bg-full-img [&>div]:hidden [&>div]:flex-col [&>div>span]:absolute
+      [&>div>span]:top-[20px] [&>div>span]:right-[20px] [&>div]:items-center [&>div]:justify-center
+      [&>div]:transition [&>div]:duration-300 [&>div>span]:text-[40px] [&>div>span]:text-[#fff] [&>div>span]:z-100 [&>div>span]:cursor-pointer [&>div>span]:font-bold
+      md:grid-cols-p3"
+    >
       <CardsProjects
-        title="MarvelWeb"
+        title="Marvel Web"
         src="../assets/ProyectoMarvel.webp"
-        alt="MarvelWeb"
+        alt="Marvel Web"
         hrefgit="Marvel"
         hrefdep="webmarvel"
         arialabel="Marvel"
       />
       <div class="full-img">
-        <CardsDescriptProjects 
-        title="Marvel Web" 
-        description="Esta web brinda información para aquellos que no conozcan sobre el UCM (Universo Cinematográfico de Marvel), para conocer los personajes y quienes los interpretan, las películas y series, próximos estrenos y en que plataformas las pueden encontrar.">
-          <div class="lenguajes-tecnologias">
-            <IconHTML />
-            <IconCSS />
-            <IconJS />
-            <IconBS />
-          </div>
-        </CardsDescriptProjects>
+        <CardsDescriptProjects
+          title="Marvel Web"
+          description="Esta web brinda información para aquellos que no conozcan sobre el UCM (Universo Cinematográfico de Marvel), para conocer los personajes y quienes los interpretan, las películas y series, próximos estrenos y en que plataformas las pueden encontrar."
+        />
+        <div
+          class="lenguajes-tecnologias mt-[10px] flex gap-[5px] justify-center items-center"
+        >
+          <IconHTML />
+          <IconCSS />
+          <IconJS />
+          <IconBS />
+        </div>
         <span class="btn-close">X</span>
       </div>
       <CardsProjects
-        title="Generadordecontraseñas"
+        title="Generador de contraseñas"
         src="../assets/generadordecontraseñas.webp"
-        alt="Generadordecontraseñas"
+        alt="Generador de contraseñas"
         hrefgit="passwordgenerator"
         hrefdep="passwordgenerator"
-        arialabel="Generadordecontraseñas"
+        arialabel="Generador de contraseñas"
       />
       <div class="full-img">
         <CardsDescriptProjects
           title="Generador de contraseñas"
           description="Esta web consta de un generador de contraseñas con distintas opciones, como elegir la longitud de tu constraseña y además es con fines educativos y a modo de práctica."
+        />
+        <div
+          class="lenguajes-tecnologias mt-[10px] flex gap-[5px] justify-center items-center"
         >
-          <div class="lenguajes-tecnologias">
-            <IconHTML />
-            <IconJS />
-            <IconTW />
-          </div>
-        </CardsDescriptProjects>
+          <IconHTML />
+          <IconJS />
+          <IconTW />
+        </div>
         <span class="btn-close">X</span>
       </div>
       <CardsProjects
         title="Climatech"
         src="../assets/ProyectoClimatech.webp"
-        alt="Webdelclima"
+        alt="Web del clima"
         hrefgit="Climatech"
         hrefdep="climatechweb"
         arialabel="Climatech"
       />
       <div class="full-img">
-        <CardsDescriptProjects 
-        title="Climatech" 
-        description="Este proyecto brinda información meteorológica a traves de la API extraída de OpenWeatherMap. Gracias a esta web aprendi como extraer API's.">
-          <div class="lenguajes-tecnologias">
-            <IconHTML />
-            <IconCSS />
-            <IconJS />
-          </div>
-        </CardsDescriptProjects>
+        <CardsDescriptProjects
+          title="Climatech"
+          description="Este proyecto brinda información meteorológica a traves de la API extraída de OpenWeatherMap. Gracias a esta web aprendi como extraer API's."
+        />
+        <div
+          class="lenguajes-tecnologias mt-[10px] flex gap-[5px] justify-center items-center"
+        >
+          <IconHTML />
+          <IconCSS />
+          <IconJS />
+        </div>
         <span class="btn-close">X</span>
       </div>
     </div>

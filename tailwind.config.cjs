@@ -13,7 +13,10 @@ module.exports = {
 				"cards": "0px 17px 15px rgba(18, 18, 18, .6)",
 			},
 			gridTemplateColumns: {
+				"2": "repeat(2, 300px)",
 				"4": "repeat(4, 50px)",
+				"md": "repeat(2, 349px)",
+				"p3": "repeat(3, 230px)",
 			},
 			backgroundColor: {
 				"cards": "rgba(255, 255, 255, 0.2)",
@@ -22,6 +25,7 @@ module.exports = {
 			},
 			backgroundImage: {
 				"bg-gradient-body": "radial-gradient(circle, rgba(75, 75, 78, 1) 8%, rgba(50, 50, 52, 1) 48%, rgba(32, 32, 34, 1) 68%)",
+				"name": "linear-gradient(90deg, rgba(0, 209, 255, 1) 8%, rgba(17, 176, 211, 1) 28%, rgba(16, 167, 200, 1) 39%, rgba(13, 143, 171, 1) 64%)",
 			},
 		},
 	},
