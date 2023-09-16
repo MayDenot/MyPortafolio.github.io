@@ -4,7 +4,7 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-				sans: ["Oxygen", "Poppins", "sans-serif"]
+				sans: ["Poppins", "sans-serif"]
 			},
 			boxShadow: {
 				"3xl": "0 0 15px #121212",

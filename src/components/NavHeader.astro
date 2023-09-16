@@ -1,3 +1,6 @@
+---
+import ThemeButton from "./ThemeButton.astro";
+---
 
 <nav id="nav" class="h-full flex flex-col justify-center items-center">
   <ul class="list-none">
@@ -18,7 +21,7 @@
         href="#sobremi"
         class="text-[20px] text-[#fff] no-underline relative
         font-semibold checkbox:h-0 checkbox:w-0 checkbox:invisible before:content-['']
-        before:absolute before:bottom-[-5px] before:left-0 before:w-full before:h-[2px]
+        before:absolute before:bottom-[-5px] before:left-0 before:w-full before:h-[2px] 
         before:bg-[#00D1FF] before:z-[1] before:transform before:scale-x-0 before:origin-left
         before:transition before:duration-500 before:ease-in-out hover:before:transform
         hover:before:scale-x-[1]"
@@ -30,7 +33,7 @@
         href="#proyectos"
         class="text-[20px] text-[#fff] no-underline relative
         font-semibold checkbox:h-0 checkbox:w-0 checkbox:invisible before:content-['']
-        before:absolute before:bottom-[-5px] before:left-0 before:w-full before:h-[2px]
+        before:absolute before:bottom-[-5px] before:left-0 before:w-full before:h-[2px] 
         before:bg-[#00D1FF] before:z-[1] before:transform before:scale-x-0 before:origin-left
         before:transition before:duration-500 before:ease-in-out hover:before:transform
         hover:before:scale-x-[1]"
@@ -41,8 +44,8 @@
       <a
         href="#habilidades"
         class="text-[20px] text-[#fff] no-underline relative
-        font-semibold checkbox:h-0 checkbox:w-0 checkbox:invisible before:content-[''] 
-        before:absolute before:bottom-[-5px] before:left-0 before:w-full before:h-[2px]
+        font-semibold checkbox:h-0 checkbox:w-0 checkbox:invisible before:content-['']
+        before:absolute before:bottom-[-5px] before:left-0 before:w-full before:h-[2px] 
         before:bg-[#00D1FF] before:z-[1] before:transform before:scale-x-0 before:origin-left
         before:transition before:duration-500 before:ease-in-out hover:before:transform
         hover:before:scale-x-[1]"
@@ -50,51 +53,5 @@
     </li>
     <br />
   </ul>
-  <div class="checkbox-wrapper flex items-center gap-[10px]">
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      class="icon icon-tabler icon-tabler-moon"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      stroke-width="2"
-      stroke="#fff"
-      fill="none"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-    >
-      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-      <path
-        d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"
-      ></path>
-    </svg>
-    <input
-      type="checkbox"
-      id="switch"
-      class="only-of-type:checkbox:h-0 only-of-type:checkbox:w-0 checked:left-[calc(100% - 2.5%)] checked:transform checked:-translate-x-full"
-    />
-    <label
-      for="switch"
-      class="w-[50px] cursor-pointer h-[calc(50px / 2)] bg-[#636464] block rounded-[100px] relative after:active:w-[55%] after:active:text-[#242324] after:content-[''] after:absolute after:top-[6%] after:left-[3%] w-[calc(50% - 5%)] h-[calc(100% -15%)]
-    after:bg-[#6DE5FF] after:rounded-[90px] after:transition after:duration-300"
-    ></label>
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      class="icon icon-tabler icon-tabler-sun"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      stroke-width="2"
-      stroke="#fff"
-      fill="none"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-    >
-      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-      <path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0"></path>
-      <path
-        d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7"
-      ></path>
-    </svg>
-  </div>
+  <ThemeButton />
 </nav>
