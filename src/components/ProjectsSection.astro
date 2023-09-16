@@ -14,17 +14,18 @@ import IconTW from "./IconTW.astro";
     class="relative h-screen flex flex-col justify-evenly items-center"
   >
     <h2
-      class="titulo font-semibold block relative text-[2em] w-full text-gray-400 text-center md:text-[3.1em]"
+      class="titulo font-semibold block relative text-[2em] w-full text-gray-400 text-center md:text-[3.1em] xl:text-[3.8em]"
     >
-      <span>PROYECTOS</span>
+      PROYECTOS
     </h2>
     <div
       id="wrapper-cards"
-      class="grid grid-cols-[250px] justify-center items-center gap-[15px] [&>div]:fixed [&>div]:top-0 [&>div]:left-0 [&>div]:w-full [&>div]:h-full
-      [&>div]:z-100 [&>div]:bg-full-img [&>div]:hidden [&>div]:flex-col [&>div>span]:absolute
-      [&>div>span]:top-[20px] [&>div>span]:right-[20px] [&>div]:items-center [&>div]:justify-center
-      [&>div]:transition [&>div]:duration-300 [&>div>span]:text-[40px] [&>div>span]:text-[#fff] [&>div>span]:z-100 [&>div>span]:cursor-pointer [&>div>span]:font-bold
-      md:grid-cols-p3"
+      class="grid grid-cols-[250px] justify-center items-center gap-[15px] [&>div]:fixed [&>div]:top-0 
+      [&>div]:left-0 [&>div]:w-full [&>div]:h-full [&>div]:z-100 [&>div]:bg-full-img [&>div]:hidden 
+      [&>div]:flex-col [&>div>span]:absolute [&>div>span]:top-[20px] [&>div>span]:right-[20px] 
+      [&>div]:items-center [&>div]:justify-center [&>div]:transition [&>div]:duration-300 [&>div>span]:text-[40px] 
+      [&>div>span]:text-[#fff] [&>div>span]:z-100 [&>div>span]:cursor-pointer [&>div>span]:font-bold md:grid-cols-p3
+      xl:grid-cols-pxl"
     >
       <CardsProjects
         title="Marvel Web"
@@ -96,3 +97,28 @@ import IconTW from "./IconTW.astro";
     </div>
   </div>
 </section>
+
+<script type="module">
+  const wrapperCards = document.querySelector("#wrapper-cards");
+  const btnsClose = document.querySelectorAll(".btn-close");
+  const fullImg = document.querySelectorAll(".full-img");
+
+  document.querySelectorAll(".btn-description").forEach((cardBody, index) => {
+    cardBody.addEventListener("click", () => {
+      wrapperCards[index].classList.remove("[&>div]:hidden")
+      wrapperCards[index].classList.add("[&>div]:flex");
+    });
+
+    window.addEventListener("keydown", (e) => {
+      if (e.key == "Escape") {
+        wrapperCards[index].classList.add("[&>div]:hidden");
+      }
+    });
+
+    for (let i = 0; i < btnsClose.length; i++) {
+      btnsClose[i].addEventListener("click", () => {
+        wrapperCards[index].classList.add("[&>div]:hidden");
+      });
+    }
+  });
+</script>

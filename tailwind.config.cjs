@@ -17,6 +17,9 @@ module.exports = {
 				"4": "repeat(4, 50px)",
 				"md": "repeat(2, 349px)",
 				"p3": "repeat(3, 230px)",
+				"pxl": "repeat(3, 350px)",
+				"lg": "repeat(2, 350px)",
+				"xl": "repeat(2, 450px)",
 			},
 			backgroundColor: {
 				"cards": "rgba(255, 255, 255, 0.2)",

@@ -11,14 +11,18 @@ interface Props {
 const { title, src, alt, hrefgit, hrefdep, arialabel } = Astro.props;
 ---
 
-<article id="cards" class="w-full h-[200px] flex flex-col justify-center items-center bg-cards border-2 border-[#696969] shadow-cards rounded-[10px]">
-  <h3 class="text-[#000000] text-[14px] mb-[5px] text-center">{title}</h3>
+<article id="cards" class="w-full h-[200px] flex flex-col justify-center items-center bg-cards border-2
+  border-[#696969] shadow-cards rounded-[10px] xl:h-[280px]">
+  <h3 class="text-[#000000] text-[14px] mb-[5px] text-center xl:text-[18px]">{title}</h3>
   <div id="img-card" class="flex justify-center">
     <img class="w-[90%] rounded-lg" src={src} alt={alt} />
   </div>
   <div id="card-body" class="flex flex-col items-center mt-2">
-    <div id="links" class="flex [&>a]:flex [&>a]:items-center [&>a]:px-[2px] [&>a]:py-0 [&>a]:bg-[#00D1FF] [&>a]:border-2 [&>a]:border-[#00D1FF] [&>a]:rounded-md [&>a]:text-[#121212] [&>a]:cursor-pointer [&>a]:no-underline 
-      [&>a]:mx-[2px] [&>a]:my-0 [&>a]:text-[11px] [&>a>svg]:w-4 hover:[&>a]:bg-[#B1F1FF] hover:[&>a]border-2 hover:[&>a]border-[#B1F1FF]">
+    <div id="links" class="flex [&>a]:flex [&>a]:items-center [&>a]:px-[2px] [&>a]:py-0 [&>a]:bg-[#00D1FF] 
+      [&>a]:border-2 [&>a]:border-[#00D1FF] [&>a]:rounded-md [&>a]:text-[#121212] [&>a]:cursor-pointer 
+      [&>a]:no-underline [&>a]:mx-[2px] [&>a]:my-0 [&>a]:text-[11px] [&>a>svg]:w-4 hover:[&>a]:bg-[#B1F1FF] 
+      hover:[&>a]border-2 hover:[&>a]:border-[#B1F1FF] xl:[&>a]:text-[14px] xl:[&>a]:px-[6px] xl:[&>a]:py-[1px]
+      xl:mt-[2px]">
       <a
         href=`https://github.com/MayDenot/${hrefgit}.github.io`
         target="_blank"
@@ -57,6 +61,7 @@ const { title, src, alt, hrefgit, hrefdep, arialabel } = Astro.props;
         Web
       </a>
     </div>
-    <button id="btn-description" class="text-[12px] text-[#fff] p-[2px] bg-transparent border-0 cursor-pointer hover:no-underline">Descripción</button>
+    <button id="btn-description" class="text-[12px] text-[#fff] p-[2px] bg-transparent border-0 cursor-pointer 
+    hover:no-underline xl:mt-[10px] xl:text-[14px]">Descripción</button>
   </div>
 </article>

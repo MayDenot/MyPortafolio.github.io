@@ -1,29 +1,53 @@
-<!-- 
-.checkbox-wrapper input[type=checkbox] {
-    height: 0;
-    width: 0;
-    visibility: hidden;
-}
-.checkbox-wrapper input:checked+label {
-  background: var(--others-5);
-}
-.checkbox-wrapper input:checked+label::after {
-    left: calc(100% - 2.5%);
-    transform: translateX(-100%);
-}
--->
+
 <nav id="nav" class="h-full flex flex-col justify-center items-center">
-  <ul class="list-none [&>li>a]:text-[20px] [&>li>a]:text-[#fff] [&>li>a]:no-underline [&>li>a]:relative [&>li>a]:font-semibold [&>li>a]:before:content-[''] 
-    [&>li>a]:before:absolute [&>li>a]:before:bottom-[-5px] [&>li>a]:before:left-0 [&>li>a]:before:w-full [&>li>a]:before:h-[2px] [&>li>a]:before:bg-[#00D1FF] [&>li>a]:before:z-[1]
-    [&>li>a]:before:transform [&>li>a]:before:scale-x-0 [&>li>a]:before:origin-left [&>li>a]:before:transition [&>li>a]:before:duration-500 [&>li>a]:before:ease-in-out
-    [&>li>a]:hover:before:transform [&>li>a]:hover:before:scale-x-[1]">
-    <li><a href="#home">HOME</a></li>
+  <ul class="list-none">
+    <li>
+      <a
+        href="#home"
+        class="text-[20px] text-[#fff] no-underline relative
+        font-semibold checkbox:h-0 checkbox:w-0 checkbox:invisible before:content-['']
+        before:absolute before:bottom-[-5px] before:left-0 before:w-full before:h-[2px] 
+        before:bg-[#00D1FF] before:z-[1] before:transform before:scale-x-0 before:origin-left
+        before:transition before:duration-500 before:ease-in-out hover:before:transform
+        hover:before:scale-x-[1]"
+        >HOME</a>
+    </li>
     <br />
-    <li><a href="#sobremi">SOBRE MI</a></li>
+    <li>
+      <a
+        href="#sobremi"
+        class="text-[20px] text-[#fff] no-underline relative
+        font-semibold checkbox:h-0 checkbox:w-0 checkbox:invisible before:content-['']
+        before:absolute before:bottom-[-5px] before:left-0 before:w-full before:h-[2px]
+        before:bg-[#00D1FF] before:z-[1] before:transform before:scale-x-0 before:origin-left
+        before:transition before:duration-500 before:ease-in-out hover:before:transform
+        hover:before:scale-x-[1]"
+        >SOBRE MI</a>
+    </li>
     <br />
-    <li><a href="#proyectos">PROYECTOS</a></li>
+    <li>
+      <a
+        href="#proyectos"
+        class="text-[20px] text-[#fff] no-underline relative
+        font-semibold checkbox:h-0 checkbox:w-0 checkbox:invisible before:content-['']
+        before:absolute before:bottom-[-5px] before:left-0 before:w-full before:h-[2px]
+        before:bg-[#00D1FF] before:z-[1] before:transform before:scale-x-0 before:origin-left
+        before:transition before:duration-500 before:ease-in-out hover:before:transform
+        hover:before:scale-x-[1]"
+        >PROYECTOS</a>
+    </li>
     <br />
-    <li><a href="#habilidades">HABILIDADES</a></li>
+    <li>
+      <a
+        href="#habilidades"
+        class="text-[20px] text-[#fff] no-underline relative
+        font-semibold checkbox:h-0 checkbox:w-0 checkbox:invisible before:content-[''] 
+        before:absolute before:bottom-[-5px] before:left-0 before:w-full before:h-[2px]
+        before:bg-[#00D1FF] before:z-[1] before:transform before:scale-x-0 before:origin-left
+        before:transition before:duration-500 before:ease-in-out hover:before:transform
+        hover:before:scale-x-[1]"
+        >HABILIDADES</a>
+    </li>
     <br />
   </ul>
   <div class="checkbox-wrapper flex items-center gap-[10px]">

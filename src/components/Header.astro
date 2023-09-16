@@ -2,12 +2,12 @@
 import NavHeader from "./NavHeader.astro";
 ---
 
-<header id="slidebar" class="fixed w-[200px] h-full backdrop-blur-[10px] z-10 flex flex-col shadow-3xl top-0 transition duration-500 ease-in-out left-[-200px]">
+<header id="slidebar" class="fixed w-[200px] h-full backdrop-blur-[10px] z-10 flex flex-col shadow-3xl top-0 transition duration-500 ease-in-out left-[-200px] lg:left-0">
   <div class="head text-[#fff] flex p-[10px] justify-between">
     <div class="profile">
       <a href="/">
         <img
-          class="w-[80px]"
+          class="w-[80px] transition duration-300 ease-in-out hover:scale-[1.2]"
           src="/assets/LogoPortafolio2.webp"
           alt="Logo MD"
           aria-label="Ir al inicio de página"
@@ -15,14 +15,14 @@ import NavHeader from "./NavHeader.astro";
       </a>
       <a href="/">
         <img
-          class="lightmode hidden"
+          class="lightmode hidden transition duration-300 ease-in-out hover:scale-[1.2]"
           src="/assets/LogoPortafolio.webp"
           alt="Logo MD"
           aria-label="Ir al inicio de página"
         />
       </a>
     </div>
-    <label id="btn" class="relative left-[50px] h-auto" aria-label="Abrir y cerrar barra de navegación">
+    <label id="btn" class="relative left-[50px] h-auto lg:hidden" aria-label="Abrir y cerrar barra de navegación">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         class="icon icon-tabler icon-tabler-menu-2"
