@@ -39,7 +39,7 @@ body.lightmode {
     background: #ECFCFF;
 }
 
-html::-webkit-scrollbar {
+/* html::-webkit-scrollbar {
     width: 12px;
 }
 
@@ -51,8 +51,8 @@ html::-webkit-scrollbar-thumb {
 
 html::-webkit-scrollbar-track {
     background-color: #636464;
-}
-
+} */
+/* 
 span::selection {
     background-color: #636464;
 }
@@ -95,7 +95,7 @@ li::selection {
 
 label::selection {
     background-color: #636464;
-}
+} */
 
 /* Lightmode */
 body.lightmode span::selection {
@@ -885,7 +885,7 @@ body.lightmode .footer-social-media ul li a i {
 body.lightmode .footer-social-media ul li a i:hover {
     color: var(--primary-light-color);
 }
-
+/* 
 @media screen and (min-width: 375px) {
 
     .titulo {
@@ -1355,4 +1355,4 @@ body.lightmode .footer-social-media ul li a i:hover {
         padding-bottom: 10px;
         font-size: 18px;
     }
-}
+} */
