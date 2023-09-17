@@ -1,5 +1,5 @@
 ---
-import '@fontsource/poppins';
+import "@fontsource/poppins";
 ---
 
 <!doctype html>
@@ -10,7 +10,7 @@ import '@fontsource/poppins';
     <link rel="icon" href="/assets/IconoPortafolio2.ico" type="image/x-icon" />
     <title>Mayra Denot | Portafolio</title>
   </head>
-  <body class="font-sans bg-bg-gradient-body selection:bg-[#636464]">
+  <body class="font-sans bg-gradient-body selection:bg-[#636464] dark:bg-body-light">
     <slot />
   </body>
 </html>
@@ -50,10 +50,9 @@ import '@fontsource/poppins';
     slideBar.classList.toggle("desplegar");
   });
 
-  const blight = document.querySelector("#switch");
-  const body = document.querySelector("body");
+  const btnTheme = document.getElementById("btn-theme");
 
-  blight.addEventListener("click", (e) => {
-    body.classList.toggle("lightmode");
-  });
+  btnTheme.addEventListener("click", () => {
+    document.documentElement.classList.toggle("dark");
+  })
 </script>

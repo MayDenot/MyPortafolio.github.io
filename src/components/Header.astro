@@ -7,7 +7,7 @@ import NavHeader from "./NavHeader.astro";
     <div class="profile">
       <a href="/">
         <img
-          class="w-[80px] transition duration-300 ease-in-out hover:scale-[1.2]"
+          class="w-[80px] transition duration-300 ease-in-out hover:scale-[1.2] dark:hidden"
           src="/assets/LogoPortafolio2.webp"
           alt="Logo MD"
           aria-label="Ir al inicio de página"
@@ -15,7 +15,7 @@ import NavHeader from "./NavHeader.astro";
       </a>
       <a href="/">
         <img
-          class="lightmode hidden transition duration-300 ease-in-out hover:scale-[1.2]"
+          class="w-[75px] hidden transition duration-300 ease-in-out hover:scale-[1.2] dark:block"
           src="/assets/LogoPortafolio.webp"
           alt="Logo MD"
           aria-label="Ir al inicio de página"
@@ -25,7 +25,7 @@ import NavHeader from "./NavHeader.astro";
     <label id="btn" class="relative left-[50px] h-auto lg:hidden" aria-label="Abrir y cerrar barra de navegación">
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        class="icon icon-tabler icon-tabler-menu-2"
+        class="icon icon-tabler icon-tabler-menu-2 dark:stroke-black"
         width="24"
         height="24"
         viewBox="0 0 24 24"

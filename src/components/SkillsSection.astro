@@ -12,16 +12,22 @@ import IconAstro from "./IconAstro.astro";
 
 <section id="habilidades" class="w-full h-screen">
   <div id="container-habilidades" class="h-screen flex flex-col items-center justify-center">
-    <h2 class="titulo block font-semibold relative text-[2em] w-full text-gray-400 text-center md:text-[3.1em]">
+    <h2 class="titulo block font-semibold relative text-[2em] w-full text-gray-400 
+    text-center md:text-[3.1em] dark:text-[#000005a4]">
       <span>HABILIDADES</span>
     </h2>
     <br />
     <br />
-    <div id="wrapper-habilidades" class="flex flex-col items-center text-[#fff]">
+    <div id="wrapper-habilidades" class="flex flex-col items-center text-[#fff] dark:text-black">
       <div id="lenguajes" class="flex flex-col items-center">
         <h2 class="text-[1.4em] md:text-[2.2em]">Lenguajes</h2>
         <br />
-        <div id="lenguajes-img" class="grid grid-cols-4 gap-[10px] md:gap-[20px] [&>div>svg]:h-[40px] [&>div>svg]:w-[40px] [&>div>p]:mt-[10px] [&>div>p]:text-[13px] [&>div>p]:text-center md:[&>div>p]:text-[16px] md:[&>div>svg]:h-[60px] md:[&>div>svg]:w-[60px]">
+        <div id="lenguajes-img" class="grid grid-cols-4 gap-[10px] md:grid-cols-4md md:gap-0 
+          [&>div>svg]:h-[40px] [&>div>p]:text-[11px] [&>div]:px-[20px] [&>div]:py-[2px]
+          [&>div>svg]:w-[40px] [&>div>p]:mt-[10px] [&>div>p]:text-center 
+          md:[&>div>p]:text-[16px] md:[&>div>svg]:h-[60px] md:[&>div>svg]:w-[60px] 
+        dark:[&>div]:bg-[#0000005e] dark:[&>div]:rounded-[8px] dark:md:[&>div]:w-[100px]
+          dark:md:[&>div]:px-[15px] dark:md:[&>div]:py-[5px]">
           <div class="content flex flex-col items-center">
             <IconHTML />
             <p>HTML</p>
@@ -44,8 +50,14 @@ import IconAstro from "./IconAstro.astro";
       <div id="herramientas" class="flex flex-col items-center">
         <h2 class="text-[1.4em] md:text-[2.2em]">Herramientas</h2>
         <br />
-        <div id="herramientas-img" class="grid grid-rows-2 grid-cols-3 gap-[10px] justify-center justify-items-center lg:grid-rows-1 lg:grid-cols-5 [&>div]:flex [&>div]:flex-col [&>div]:items-center [&>div]:justify-center [&>div>svg]:h-[40px] [&>div>svg]:w-[40px] [&>div>p]:mt-[10px] [&>div>p]:text-[13px] [&>div>p]:text-center
-          md:[&>div>p]:text-[16px] md:[&>div>svg]:h-[60px] md:[&>div>svg]:w-[60px]">
+        <div id="herramientas-img" class="grid grid-rows-2 grid-cols-3 gap-[10px] justify-center 
+          justify-items-center lg:grid-rows-1 lg:grid-cols-5 [&>div]:flex [&>div]:flex-col 
+          [&>div]:items-center [&>div]:justify-center [&>div>svg]:h-[40px] [&>div>svg]:w-[40px] 
+          [&>div>p]:mt-[10px] [&>div>p]:text-[13px] [&>div>p]:text-center md:grid-cols-3md 
+          md:dark:[&>div]:w-[100px] md:[&>div>p]:text-[16px] md:[&>div>svg]:h-[60px] 
+          md:[&>div>svg]:w-[60px]dark:[&>div]:border-black dark:[&>div]:bg-[#0000005e] 
+          dark:[&>div]:rounded-[10px] dark:[&>div]:w-[70px] dark:[&>div]:px-[5px] 
+          dark:[&>div]:py-[5px]">
           <div class="content">
             <IconBS />
             <p>Bootstrap</p>

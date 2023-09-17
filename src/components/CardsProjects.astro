@@ -11,9 +11,11 @@ interface Props {
 const { title, src, alt, hrefgit, hrefdep, arialabel } = Astro.props;
 ---
 
-<article id="cards" class="w-full h-[200px] flex flex-col justify-center items-center bg-cards border-2
-  border-[#696969] shadow-cards rounded-[10px] xl:h-[280px]">
-  <h3 class="text-[#000000] text-[14px] mb-[5px] text-center xl:text-[18px]">{title}</h3>
+<article id="cards" class="w-full h-[200px] flex flex-col justify-center items-center bg-cards
+  border-2 border-[#696969] shadow-cards rounded-[10px] xl:h-[280px] dark:bg-cardslight
+  dark:shadow-cardslight">
+  <h3 class="text-[#000000] text-[14px] mb-[5px] text-center xl:text-[18px]
+  dark:text-[#fff]">{title}</h3>
   <div id="img-card" class="flex justify-center">
     <img class="w-[90%] rounded-lg" src={src} alt={alt} />
   </div>
