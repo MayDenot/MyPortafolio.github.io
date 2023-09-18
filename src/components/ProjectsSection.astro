@@ -22,10 +22,10 @@ import IconAstro from "./IconAstro.astro";
     </h2>
     <div
       id="wrapper-cards"
-      class="grid grid-cols-[250px] justify-center items-center gap-[15px] [&>div]:fixed [&>div]:top-0 
-      [&>div]:left-0 [&>div]:w-full [&>div]:h-full [&>div]:z-100 [&>div]:bg-full-img [&>div]:hidden 
-      [&>div]:flex-col [&>div>span]:absolute [&>div>span]:top-[20px] [&>div>span]:right-[20px] 
-      [&>div]:items-center [&>div]:justify-center [&>div]:transition [&>div]:duration-300 [&>div>span]:text-[40px] 
+      class="grid grid-cols-[250px] justify-center items-center gap-[15px] [&>div]:fixed [&>div]:top-0
+      [&>div]:left-0 [&>div]:w-full [&>div]:h-full [&>div]:z-100 [&>div]:bg-full-img [&>div]:hidden
+      [&>div]:flex-col [&>div>span]:absolute [&>div>span]:top-[20px] [&>div>span]:right-[20px]
+      [&>div]:items-center [&>div]:justify-center [&>div]:transition [&>div]:duration-300 [&>div>span]:text-[40px]
       [&>div>span]:text-[#fff] [&>div>span]:z-100 [&>div>span]:cursor-pointer [&>div>span]:font-bold md:grid-cols-p2
       md:grid-rows-2 xl:grid-cols-pxl"
     >
@@ -129,7 +129,7 @@ import IconAstro from "./IconAstro.astro";
 
   document.querySelectorAll(".btn-description").forEach((cardBody, index) => {
     cardBody.addEventListener("click", () => {
-      wrapperCards[index].classList.remove("[&>div]:hidden")
+      wrapperCards[index].classList.remove("[&>div]:hidden");
       wrapperCards[index].classList.add("[&>div]:flex");
     });
 

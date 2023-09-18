@@ -1,5 +1,6 @@
 ---
 import "@fontsource/poppins";
+import { ViewTransitions } from "astro:transitions";
 ---
 
 <!doctype html>
@@ -9,8 +10,10 @@ import "@fontsource/poppins";
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="/assets/IconoPortafolio2.ico" type="image/x-icon" />
     <title>Mayra Denot | Portafolio</title>
+    <ViewTransitions />
   </head>
-  <body class="font-sans bg-gradient-body selection:bg-[#636464] dark:bg-body-light">
+  <body
+    class="font-sans bg-gradient-body selection:bg-[#636464] dark:bg-body-light">
     <slot />
   </body>
 </html>
@@ -54,5 +57,5 @@ import "@fontsource/poppins";
 
   btnTheme.addEventListener("click", () => {
     document.documentElement.classList.toggle("dark");
-  })
+  });
 </script>

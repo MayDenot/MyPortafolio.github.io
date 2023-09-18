@@ -11,20 +11,30 @@ interface Props {
 const { title, src, alt, hrefgit, hrefdep, arialabel } = Astro.props;
 ---
 
-<article id="cards" class="w-full h-[200px] flex flex-col justify-center items-center bg-cards
+<article
+  id="cards"
+  class="w-full h-[200px] flex flex-col justify-center items-center bg-cards
   border-2 border-[#696969] shadow-cards rounded-[10px] xl:h-[280px] dark:bg-cardslight
-  dark:shadow-cardslight">
-  <h3 class="text-[#000000] text-[14px] mb-[5px] text-center xl:text-[18px]
-  dark:text-[#fff]">{title}</h3>
+  dark:shadow-cardslight"
+>
+  <h3
+    class="text-[#000000] text-[14px] mb-[5px] text-center xl:text-[18px]
+  dark:text-[#fff]"
+  >
+    {title}
+  </h3>
   <div id="img-card" class="flex justify-center">
     <img class="w-[90%] rounded-lg" src={src} alt={alt} />
   </div>
   <div id="card-body" class="flex flex-col items-center mt-2">
-    <div id="links" class="flex [&>a]:flex [&>a]:items-center [&>a]:px-[2px] [&>a]:py-0 [&>a]:bg-[#00D1FF] 
-      [&>a]:border-2 [&>a]:border-[#00D1FF] [&>a]:rounded-md [&>a]:text-[#121212] [&>a]:cursor-pointer 
-      [&>a]:no-underline [&>a]:mx-[2px] [&>a]:my-0 [&>a]:text-[11px] [&>a>svg]:w-4 hover:[&>a]:bg-[#B1F1FF] 
+    <div
+      id="links"
+      class="flex [&>a]:flex [&>a]:items-center [&>a]:px-[2px] [&>a]:py-0 [&>a]:bg-[#00D1FF]
+      [&>a]:border-2 [&>a]:border-[#00D1FF] [&>a]:rounded-md [&>a]:text-[#121212] [&>a]:cursor-pointer
+      [&>a]:no-underline [&>a]:mx-[2px] [&>a]:my-0 [&>a]:text-[11px] [&>a>svg]:w-4 hover:[&>a]:bg-[#B1F1FF]
       hover:[&>a]border-2 hover:[&>a]:border-[#B1F1FF] xl:[&>a]:text-[14px] xl:[&>a]:px-[6px] xl:[&>a]:py-[1px]
-      xl:mt-[2px]">
+      xl:mt-[2px]"
+    >
       <a
         href=`https://github.com/MayDenot/${hrefgit}.github.io`
         target="_blank"
@@ -47,23 +57,64 @@ const { title, src, alt, hrefgit, hrefdep, arialabel } = Astro.props;
             d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
           ></path>
         </svg>
-        Github
+         Github
       </a>
       <a
         href=`https://${hrefdep}`
         target="_blank"
         aria-label=`Ir a la Web de ${arialabel}`
       >
-      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-        <path d="M9 15l6 -6"></path>
-        <path d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464"></path>
-        <path d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463"></path>
-      </svg>
-        Web
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-link"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          stroke-width="2"
+          stroke="currentColor"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+          <path d="M9 15l6 -6"></path>
+          <path d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464"></path>
+          <path
+            d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463"
+          ></path>
+        </svg>
+         Web
       </a>
     </div>
-    <button id="btn-description" class="text-[12px] text-[#fff] p-[2px] bg-transparent border-0 cursor-pointer 
-    hover:no-underline xl:mt-[10px] xl:text-[14px]">Descripción</button>
+    <button
+      id="btn-description"
+      class="text-[12px] text-[#fff] p-[2px] bg-transparent border-0 cursor-pointer
+    hover:no-underline xl:mt-[10px] xl:text-[14px]"
+      >Descripción</button
+    >
   </div>
 </article>
+
+<style>
+  @keyframes fadeup {
+    0% {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  #cards {
+    view-timeline-name: --fadeup;
+    view-timeline-axis: block;
+
+    animation-timeline: --fadeup;
+    animation-name: fadeup;
+    animation-range: entry 30% cover 50%;
+    animation-duration: 5s;
+    animation-delay: 0.3s;
+    animation-fill-mode: both;
+  }
+</style>

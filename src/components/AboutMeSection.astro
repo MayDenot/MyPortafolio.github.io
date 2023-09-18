@@ -5,7 +5,7 @@
   >
     <h2
       id="titulo"
-      class="font-semibold block relative text-[2em] w-full text-gray-400 text-center 
+      class="font-semibold block relative text-[2em] w-full text-gray-400 text-center
       md:text-[3.1em] xl:text-[3.8em] dark:text-[#000005a4]"
     >
       SOBRE MI
@@ -16,16 +16,16 @@
       class="mt-5 grid grid-cols-[250px] justify-items-center md:grid-cols-md md:items-start
     xl:grid-cols-xl"
     >
-      <div id="foto-sobremi" class="shadow-5xl w-[80%] md:w-[85%] lg:w-[60%] xl:w-[70%]">
-        <img
-          src="/assets/FotoAboutMe.webp"
-          alt="Foto de Mayra Denot"
-        />
+      <div
+        id="foto-sobremi"
+        class="shadow-5xl w-[80%] md:w-[85%] lg:w-[60%] xl:w-[70%]"
+      >
+        <img src="/assets/FotoAboutMe.webp" alt="Foto de Mayra Denot" />
       </div>
       <div
         id="wrapper-sobremi-text"
         class="pt-[10px] text-[#fff] flex flex-col [&>p]:text-[13px] xl:[&>p]:text-[16px]
-        [&>p>span]:text-[#00D1FF] dark:text-black dark:[&>p>span]:text-black 
+        [&>p>span]:text-[#00D1FF] dark:text-black dark:[&>p>span]:text-black
         dark:[&>p>span]:bg-[#00d0ff91]"
       >
         <p>
@@ -52,3 +52,26 @@
     </div>
   </div>
 </section>
+
+<style>
+  @keyframes show {
+    0% {
+      opacity: 0;
+      scale: 25%;
+    }
+    100% {
+      opacity: 1;
+      scale: 100%;
+    }
+  }
+  #foto-sobremi {
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: show;
+    animation-range: entry 30% cover 50%;
+    animation-duration: 4s;
+    animation-fill-mode: both;
+  }
+</style>
