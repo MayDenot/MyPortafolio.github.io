@@ -13,8 +13,7 @@ import { ViewTransitions } from "astro:transitions";
     <ViewTransitions />
   </head>
   <body
-    class="font-sans bg-gradient-body selection:bg-[#636464] dark:bg-body-light
-    lg:[&>section]:my-[300px] md:[&>section]:my-[250px] [&>section]:my-[150px]">
+    class="font-sans bg-gradient-body selection:bg-[#636464] dark:bg-body-light">
     <slot />
   </body>
 </html>
@@ -34,13 +33,11 @@ import { ViewTransitions } from "astro:transitions";
   html::-webkit-scrollbar {
     width: 12px;
   }
-
   html::-webkit-scrollbar-thumb {
     height: 20vh;
     border-radius: 20px;
     background-color: #b1f1ff91;
   }
-
   html::-webkit-scrollbar-track {
     background-color: #636464;
   }
