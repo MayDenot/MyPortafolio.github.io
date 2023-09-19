@@ -13,7 +13,8 @@ import { ViewTransitions } from "astro:transitions";
     <ViewTransitions />
   </head>
   <body
-    class="font-sans bg-gradient-body selection:bg-[#636464] dark:bg-body-light">
+    class="font-sans bg-gradient-body selection:bg-[#636464] dark:bg-body-light
+    lg:[&>section]:my-[300px] md:[&>section]:my-[250px] [&>section]:my-[150px]">
     <slot />
   </body>
 </html>
