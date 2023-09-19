@@ -1,12 +1,12 @@
 ---
-import CardsDescriptProjects from "./CardsDescriptProjects.astro";
 import CardsProjects from "./CardsProjects.astro";
+import ModalDescript from "./ModalDescript.astro";
 import IconHTML from "./IconHTML.astro";
 import IconCSS from "./IconCSS.astro";
 import IconJS from "./IconJS.astro";
 import IconBS from "./IconBS.astro";
 import IconTW from "./IconTW.astro";
-import IconAstro from "./IconAstro.astro";
+import IconAstroProjects from "./IconAstroProjects.astro";
 ---
 
 <section id="proyectos" class="w-full h-screen">
@@ -23,7 +23,7 @@ import IconAstro from "./IconAstro.astro";
     <div
       id="wrapper-cards"
       class="grid grid-cols-[250px] justify-center items-center gap-[15px] [&>div]:fixed [&>div]:top-0
-      [&>div]:left-0 [&>div]:w-full [&>div]:h-full [&>div]:z-100 [&>div]:bg-full-img [&>div]:hidden
+      [&>div]:left-0 [&>div]:w-full [&>div]:h-full [&>div]:z-100 [&>div]:bg-full-img
       [&>div]:flex-col [&>div>span]:absolute [&>div>span]:top-[20px] [&>div>span]:right-[20px]
       [&>div]:items-center [&>div]:justify-center [&>div]:transition [&>div]:duration-300 [&>div>span]:text-[40px]
       [&>div>span]:text-[#fff] [&>div>span]:z-100 [&>div>span]:cursor-pointer [&>div>span]:font-bold md:grid-cols-p2
@@ -37,21 +37,15 @@ import IconAstro from "./IconAstro.astro";
         hrefdep="webmarvel.vercel.app/"
         arialabel="Marvel"
       />
-      <div class="full-img">
-        <CardsDescriptProjects
-          title="Marvel Web"
-          description="Esta web brinda información para aquellos que no conozcan sobre el UCM (Universo Cinematográfico de Marvel), para conocer los personajes y quienes los interpretan, las películas y series, próximos estrenos y en que plataformas las pueden encontrar."
-        />
-        <div
-          class="lenguajes-tecnologias mt-[10px] flex gap-[5px] justify-center items-center"
-        >
-          <IconHTML />
-          <IconCSS />
-          <IconJS />
-          <IconBS />
-        </div>
-        <span class="btn-close">X</span>
-      </div>
+      <ModalDescript
+        title="Marvel Web"
+        description="Esta web brinda información para aquellos que no conozcan sobre el UCM (Universo Cinematográfico de Marvel), para conocer los personajes y quienes los interpretan, las películas y series, próximos estrenos y en que plataformas las pueden encontrar."
+      >
+        <IconHTML />
+        <IconCSS />
+        <IconJS />
+        <IconBS />
+      </ModalDescript>
       <CardsProjects
         title="Generador de contraseñas"
         src="../assets/generadordecontraseñas.webp"
@@ -60,20 +54,14 @@ import IconAstro from "./IconAstro.astro";
         hrefdep="maydenot.github.io/passwordgenerator.github.io/"
         arialabel="Generador de contraseñas"
       />
-      <div class="full-img">
-        <CardsDescriptProjects
-          title="Generador de contraseñas"
-          description="Esta web consta de un generador de contraseñas con distintas opciones, como elegir la longitud de tu constraseña y además es con fines educativos y a modo de práctica."
-        />
-        <div
-          class="lenguajes-tecnologias mt-[10px] flex gap-[5px] justify-center items-center"
-        >
-          <IconHTML />
-          <IconJS />
-          <IconTW />
-        </div>
-        <span class="btn-close">X</span>
-      </div>
+      <ModalDescript
+        title="Generador de contraseñas"
+        description="Esta web consta de un generador de contraseñas con distintas opciones, como elegir la longitud de tu constraseña y además es con fines educativos y a modo de práctica."
+      >
+        <IconHTML />
+        <IconJS />
+        <IconCSS />
+      </ModalDescript>
       <CardsProjects
         title="Climatech"
         src="../assets/ProyectoClimatech.webp"
@@ -82,20 +70,14 @@ import IconAstro from "./IconAstro.astro";
         hrefdep="climatechweb.vercel.app/"
         arialabel="Climatech"
       />
-      <div class="full-img">
-        <CardsDescriptProjects
-          title="Climatech"
-          description="Este proyecto brinda información meteorológica a traves de la API extraída de OpenWeatherMap. Gracias a esta web aprendi como extraer API's."
-        />
-        <div
-          class="lenguajes-tecnologias mt-[10px] flex gap-[5px] justify-center items-center"
-        >
-          <IconHTML />
-          <IconCSS />
-          <IconJS />
-        </div>
-        <span class="btn-close">X</span>
-      </div>
+      <ModalDescript
+        title="Climatech"
+        description="Este proyecto brinda información meteorológica a traves de la API extraída de OpenWeatherMap. Gracias a esta web aprendi como extraer API's."
+      >
+        <IconHTML />
+        <IconJS />
+        <IconCSS />
+      </ModalDescript>
       <CardsProjects
         title="Blog de maydev"
         src="../assets/ProyectoBlog.webp"
@@ -104,45 +86,14 @@ import IconAstro from "./IconAstro.astro";
         hrefdep="blog-maydev.vercel.app/"
         arialabel="Blog maydev"
       />
-      <div class="full-img">
-        <CardsDescriptProjects
-          title="Blog maydev"
-          description="Este proyecto consta de un blog personal, el cual brinda información sobre programación, hardware, entre otras cosas."
-        />
-        <div
-          class="lenguajes-tecnologias mt-[10px] flex gap-[5px] justify-center items-center"
-        >
-          <IconAstro />
-          <IconCSS />
-          <IconJS />
-        </div>
-        <span class="btn-close">X</span>
-      </div>
+      <ModalDescript
+        title="Blog maydev"
+        description="Este proyecto consta de un blog personal, el cual brinda información sobre programación, hardware, entre otras cosas."
+      >
+        <IconAstroProjects/>
+        <IconTW />
+        <IconJS />
+      </ModalDescript>
     </div>
   </div>
 </section>
-
-<script type="module">
-  const wrapperCards = document.querySelector("#wrapper-cards");
-  const btnsClose = document.querySelectorAll(".btn-close");
-  const fullImg = document.querySelectorAll(".full-img");
-
-  document.querySelectorAll(".btn-description").forEach((cardBody, index) => {
-    cardBody.addEventListener("click", () => {
-      wrapperCards[index].classList.remove("[&>div]:hidden");
-      wrapperCards[index].classList.add("[&>div]:flex");
-    });
-
-    window.addEventListener("keydown", (e) => {
-      if (e.key == "Escape") {
-        wrapperCards[index].classList.add("[&>div]:hidden");
-      }
-    });
-
-    for (let i = 0; i < btnsClose.length; i++) {
-      btnsClose[i].addEventListener("click", () => {
-        wrapperCards[index].classList.add("[&>div]:hidden");
-      });
-    }
-  });
-</script>

@@ -1,6 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
+	content: [
+		'./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'
+	],
 	darkMode: "class",
 	theme: {
 		extend: {
@@ -26,12 +28,14 @@ module.exports = {
 				"pxl": "repeat(2, 350px)",
 				"lg": "repeat(2, 350px)",
 				"xl": "repeat(2, 450px)",
+				"5": "repeat(5, 110px)",
 			},
 			backgroundColor: {
 				"cards": "rgba(255, 255, 255, 0.2)",
 				"card-info": "rgba(0, 0, 0, 0.8)",
 				"full-img": "rgba(0, 0, 0, 0.6)",
 				"cardslight": "rgba(0, 0, 0, 0.4)",
+				"astroicon": "rgba(255, 255, 255, 0.3)",
 			},
 			backgroundImage: {
 				"gradient-body": "radial-gradient(circle, rgba(75, 75, 78, 1) 8%, rgba(50, 50, 52, 1) 48%, rgba(32, 32, 34, 1) 68%)",
