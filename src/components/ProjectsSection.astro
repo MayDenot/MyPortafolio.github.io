@@ -9,10 +9,10 @@ import IconTW from "./IconTW.astro";
 import IconAstroProjects from "./IconAstroProjects.astro";
 ---
 
-<section id="proyectos" class="w-full">
+<section id="proyectos" class="w-full pb-20 md:pb-0">
   <div
     id="container-proyectos"
-    class="relative min-h-screen flex flex-col justify-center items-center mt-[50px] md:mt-0"
+    class="relative min-h-[90vh] flex flex-col justify-center items-center mt-[50px] md:mt-0"
   >
     <h2
       class="titulo font-semibold block relative text-[2em] w-full text-gray-400 text-center
@@ -28,7 +28,7 @@ import IconAstroProjects from "./IconAstroProjects.astro";
       [&>div]:flex-col [&>div>span]:absolute [&>div>span]:top-[20px] [&>div>span]:right-[20px]
       [&>div]:items-center [&>div]:justify-center [&>div]:transition [&>div]:duration-300 [&>div>span]:text-[40px]
       [&>div>span]:text-[#fff] [&>div>span]:z-100 [&>div>span]:cursor-pointer [&>div>span]:font-bold md:grid-cols-p2
-      md:grid-rows-2 xl:grid-cols-pxl"
+      md:grid-rows-2 md:gap-[25px] xl:grid-cols-pxl"
     >
       <CardsProjects
         title="Marvel Web"

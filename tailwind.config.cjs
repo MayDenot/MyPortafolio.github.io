@@ -10,11 +10,11 @@ module.exports = {
 				sans: ["Poppins", "sans-serif"]
 			},
 			boxShadow: {
-				"3xl": "0 0 15px #121212",
+				"3xl": "0 0 30px #ffffff",
 				"4xl": "rgba(255, 255, 255, 0.1) 0px 30px 90px",
 				"5xl": "rgba(0, 0, 0, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px",
-				"cards": "0px 17px 15px rgba(18, 18, 18, .6)",
-				"moon": "inset 12px -4px 0px 0px #00D1FF",
+				"cards": "0px 5px 25px rgba(18, 18, 18, .4)",
+				"moon": "inset 8px -4px 0px 0px #00D1FF",
 				"4xlight": "rgba(0, 0, 0, .4) 0px 30px 90px",
 				"cardslight": "0px 12px 15px rgba(18, 18, 18, .3)",
 			},
@@ -22,7 +22,7 @@ module.exports = {
 				"2": "repeat(2, 65px)",
 				"2md": "repeat(2, 300px)",
 				"4": "repeat(4, 65px)",
-				"4md": "repeat(4, 110px)",
+				"4md": "repeat(4, 100px)",
 				"md": "repeat(2, 349px)",
 				"p2": "repeat(2, 230px)",
 				"pxl": "repeat(2, 350px)",
@@ -42,6 +42,9 @@ module.exports = {
 				"name": "linear-gradient(90deg, rgba(0, 209, 255, 1) 8%, rgba(17, 176, 211, 1) 28%, rgba(16, 167, 200, 1) 39%, rgba(13, 143, 171, 1) 64%)",
 				"body-light": "radial-gradient(circle, #c9c9c9, #c9c9c9)",
 				"namelight": "linear-gradient(90deg, rgba(0, 0, 0, .5) 15%, rgba(0, 0, 0, .8) 86%)",
+			},
+			dropShadow: {
+				"tec": "0 12px 20px rgba(255, 255, 255, .1)",
 			},
 		},
 	},

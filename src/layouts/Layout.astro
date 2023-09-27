@@ -27,7 +27,7 @@ import { ViewTransitions } from "astro:transitions";
     scroll-behavior: smooth;
   }
   .desplegar {
-    transform: translateX(100%);
+    transform: translateY(180px);
     transition: 0.5s ease-in-out;
   }
   html::-webkit-scrollbar {
@@ -45,10 +45,10 @@ import { ViewTransitions } from "astro:transitions";
 
 <script type="module">
   const btnBar = document.getElementById("btn");
-  const slideBar = document.getElementById("slidebar");
+  const header = document.getElementById("header");
 
   btnBar.addEventListener("click", () => {
-    slideBar.classList.toggle("desplegar");
+    header.classList.toggle("desplegar");
   });
 
   const btnTheme = document.getElementById("btn-theme");

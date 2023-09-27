@@ -2,12 +2,14 @@
 import ThemeButton from "./ThemeButton.astro";
 ---
 
-<nav id="nav" class="h-full flex flex-col justify-center items-center">
-  <ul class="list-none [&>li>a]:dark:text-black [&>li>a]:dark:before:bg-black">
+<nav id="nav" class="h-full flex flex-col md:flex-row justify-center 
+  items-start md:items-center md:ml-[20px]">
+  <ul class="flex flex-col md:flex-row list-none [&>li>a]:mx-[8px]
+  [&>li>a]:dark:text-black [&>li>a]:dark:before:bg-black text-center">
     <li>
       <a
         href="#home"
-        class="text-[20px] text-[#fff] no-underline relative
+        class="text-[#fff] no-underline relative
         font-semibold checkbox:h-0 checkbox:w-0 checkbox:invisible before:content-['']
         before:absolute before:bottom-[-5px] before:left-0 before:w-full before:h-[2px] 
         before:bg-[#00D1FF] before:z-[1] before:transform before:scale-x-0 before:origin-left
@@ -19,7 +21,7 @@ import ThemeButton from "./ThemeButton.astro";
     <li>
       <a
         href="#sobremi"
-        class="text-[20px] text-[#fff] no-underline relative
+        class="text-[#fff] no-underline relative
         font-semibold checkbox:h-0 checkbox:w-0 checkbox:invisible before:content-['']
         before:absolute before:bottom-[-5px] before:left-0 before:w-full before:h-[2px] 
         before:bg-[#00D1FF] before:z-[1] before:transform before:scale-x-0 before:origin-left
@@ -31,25 +33,13 @@ import ThemeButton from "./ThemeButton.astro";
     <li>
       <a
         href="#proyectos"
-        class="text-[20px] text-[#fff] no-underline relative
+        class="text-[#fff] no-underline relative
         font-semibold checkbox:h-0 checkbox:w-0 checkbox:invisible before:content-['']
         before:absolute before:bottom-[-5px] before:left-0 before:w-full before:h-[2px] 
         before:bg-[#00D1FF] before:z-[1] before:transform before:scale-x-0 before:origin-left
         before:transition before:duration-500 before:ease-in-out hover:before:transform
         hover:before:scale-x-[1]"
         >PROYECTOS</a>
-    </li>
-    <br />
-    <li>
-      <a
-        href="#habilidades"
-        class="text-[20px] text-[#fff] no-underline relative
-        font-semibold checkbox:h-0 checkbox:w-0 checkbox:invisible before:content-['']
-        before:absolute before:bottom-[-5px] before:left-0 before:w-full before:h-[2px] 
-        before:bg-[#00D1FF] before:z-[1] before:transform before:scale-x-0 before:origin-left
-        before:transition before:duration-500 before:ease-in-out hover:before:transform
-        hover:before:scale-x-[1]"
-        >HABILIDADES</a>
     </li>
     <br />
   </ul>
