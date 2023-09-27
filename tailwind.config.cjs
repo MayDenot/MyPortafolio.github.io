@@ -43,9 +43,6 @@ module.exports = {
 				"body-light": "radial-gradient(circle, #c9c9c9, #c9c9c9)",
 				"namelight": "linear-gradient(90deg, rgba(0, 0, 0, .5) 15%, rgba(0, 0, 0, .8) 86%)",
 			},
-			dropShadow: {
-				"tec": "0 12px 20px rgba(255, 255, 255, .1)",
-			},
 		},
 	},
 	plugins: [],
