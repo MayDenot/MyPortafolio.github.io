@@ -3,9 +3,9 @@ import ThemeButton from "./ThemeButton.astro";
 ---
 
 <nav id="nav" class="h-full flex flex-col md:flex-row justify-end 
-  items-start mb-[10px] md:items-center md:ml-[20px]">
-  <ul class="flex flex-col md:flex-row list-none [&>li>a]:mx-[8px]
-  [&>li>a]:dark:text-black [&>li>a]:dark:before:bg-black text-[18px]">
+  items-start mb-[10px] md:mb-0 md:items-center md:ml-[20px]">
+  <ul class="flex flex-col md:flex-row list-none [&>li>a]:mx-[8px] py-[17px]
+  [&>li>a]:dark:text-black [&>li>a]:dark:before:bg-black text-[18px] md:py-0">
     <li>
       <a
         href="#home"
@@ -41,7 +41,6 @@ import ThemeButton from "./ThemeButton.astro";
         hover:before:scale-x-[1]"
         >PROYECTOS</a>
     </li>
-    <br />
   </ul>
   <ThemeButton />
 </nav>
